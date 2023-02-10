@@ -1,0 +1,41 @@
+﻿<Window x:Class="Tour.User.UpdateInfoUser"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Tour.User"
+        mc:Ignorable="d"
+        Title="Редактировать информацию" Height="450" Width="800">
+    <Grid>
+        <Rectangle HorizontalAlignment="Center" Height="49" Stroke="#FFB5D5CA" VerticalAlignment="Top" Width="800" Fill="#FFB5D5CA"/>
+        <Button Content="Назад" HorizontalAlignment="Left" Margin="735,15,0,0" VerticalAlignment="Top" BorderBrush="#FFB5D5CA" Background="#FFB5D5CA" Click="BackButton_Click"/>
+        <Rectangle HorizontalAlignment="Center" Height="35" Stroke="#FFE0A9AF" VerticalAlignment="Top" Width="800" Fill="#FFE0A9AF" Margin="0,49,0,0"/>
+        <Label Content="Реактировать информацию" HorizontalAlignment="Left" Margin="270,10,0,0" VerticalAlignment="Top" FontSize="18" FontWeight="Bold" Width="256" RenderTransformOrigin="0.5,0.5">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleY="0.252"/>
+                    <RotateTransform/>
+                    <TranslateTransform Y="0.396"/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Label Content="Профиль пользователя" HorizontalAlignment="Center" Margin="0,54,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <TextBox x:Name="Surname" HorizontalAlignment="Left" Margin="165,210,0,0" TextWrapping="Wrap" Text="Фамилия" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="Otch" HorizontalAlignment="Left" Margin="165,316,0,0" TextWrapping="Wrap" Text="Отчество" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="Passport" HorizontalAlignment="Center" Margin="0,210,0,0" TextWrapping="Wrap" Text="Паспортные данные" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="Name" HorizontalAlignment="Left" Margin="165,263,0,0" TextWrapping="Wrap" Text="Имя" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="Visa" HorizontalAlignment="Center" Margin="0,262,0,0" TextWrapping="Wrap" Text="Виза" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="Email" HorizontalAlignment="Center" Margin="0,316,0,0" TextWrapping="Wrap" Text="Email" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="Number" HorizontalAlignment="Left" Margin="520,210,0,0" TextWrapping="Wrap" Text="Номер" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Введите фамилию:" HorizontalAlignment="Left" Margin="165,180,0,0" VerticalAlignment="Top" Height="25" Width="120"/>
+        <Label Content="Введите имя:" HorizontalAlignment="Left" Margin="165,233,0,0" VerticalAlignment="Top" Height="25" Width="120"/>
+        <Label Content="Введите отчество:" HorizontalAlignment="Left" Margin="165,286,0,0" VerticalAlignment="Top" Height="25" Width="120"/>
+        <Label Content="Введите паспортные  &#xA;данные:" HorizontalAlignment="Left" Margin="340,163,0,0" VerticalAlignment="Top" Height="43" Width="130"/>
+        <Label Content="Введите визу:" HorizontalAlignment="Center" Margin="0,232,0,0" VerticalAlignment="Top" Height="26" Width="120"/>
+        <Label Content="Введите Email:" HorizontalAlignment="Center" Margin="0,286,0,0" VerticalAlignment="Top" Height="24" Width="120"/>
+        <Label Content="Введите Тел. Номер:" HorizontalAlignment="Left" Margin="520,180,0,0" VerticalAlignment="Top" Height="25" Width="130"/>
+        <Button Content="Сохранить" HorizontalAlignment="Left" Margin="520,314,0,0" VerticalAlignment="Top" Width="120" Background="#FFD1EEFC" Click="UpdtButton_Click"/>
+
+    </Grid>
+</Window>

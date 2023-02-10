@@ -1,0 +1,110 @@
+﻿SELECT * FROM Users
+
+CREATE TABLE Managers
+(
+	id INT NOT NULL IDENTITY(1,1) PRIMARY KEY,
+	fio VARCHAR(150) NOT NULL,
+	number VARCHAR(50) NOT NULL,
+	email VARCHAR(50) NOT NULL,
+	loginn VARCHAR(50) NOT NULL,
+	passwrd VARCHAR(50) NOT NULL
+)
+
+INSERT INTO Managers 
+(fio, number, email, loginn, passwrd)
+VALUES
+('Габец Олег Евгеньвич','+375448907865','none@mail.ru','mng2','mng2')
+
+SELECT * FROM Managers
+
+CREATE TABLE Country
+(
+	id INT NOT NULL IDENTITY(1,1) PRIMARY KEY,
+	namme VARCHAR(50) NOT NULL,
+	visayn VARCHAR(50) NOT NULL
+)
+
+CREATE TABLE City
+(
+	id INT NOT NULL IDENTITY(1,1) PRIMARY KEY,
+	id_country INT NOT NULL,
+	namme VARCHAR(50) NOT NULL,
+	FOREIGN KEY (id_country) REFERENCES Country (id) ON DELETE NO ACTION
+)
+
+CREATE TABLE Vid
+(
+	id INT NOT NULL IDENTITY(1,1) PRIMARY KEY,
+	namme VARCHAR(50)
+)
+
+CREATE TABLE Typpe
+(
+	id INT NOT NULL IDENTITY(1,1) PRIMARY KEY,
+	namme VARCHAR(50) NOT NULL
+)
+
+CREATE TABLE Vid_Transp
+(
+	id INT NOT NULL IDENTITY(1,1) PRIMARY KEY,
+	namme VARCHAR(50) NOT NULL
+)
+
+DROP TABLE Cost_Transp
+
+CREATE TABLE Cost_Transp
+(
+	cost INT NOT NULL,
+	service_level VARCHAR(50) NOT NULL,
+	id_vid_transp INT NOT NULL,
+	id_city INT NOT NULL,
+	FOREIGN KEY (id_vid_transp) REFERENCES Vid_Transp (id) ON DELETE NO ACTION,
+	FOREIGN KEY (id_city) REFERENCES City (id) ON DELETE NO ACTION
+)
+
+CREATE TABLE Razmesch
+(
+	id INT NOT NULL IDENTITY(1,1) PRIMARY KEY,
+	namme VARCHAR(50) NOT NULL,
+	adress VARCHAR(50) NOT NULL,
+	service_level VARCHAR(50) NOT NULL,
+	cost_per_day INT NOT NULL,
+	id_vid INT NOT NULL,
+	id_city INT NOT NULL,
+	FOREIGN KEY (id_vid) REFERENCES Vid(id) ON DELETE NO ACTION,
+	FOREIGN KEY (id_city) REFERENCES City(id) ON DELETE NO ACTION
+)
+
+CREATE TABLE ticket
+(
+	id INT NOT NULL IDENTITY(1,1) PRIMARY KEY,
+	id_city INT NOT NULL,
+	id_vid INT NOT NULL,
+	id_vid_transp INT NOT NULL,
+	id_typpe INT NOT NULL,
+	date_podachi DATE NOT NULL,
+	date_start DATE NOT NULL,
+	day_count INT NOT NULL,
+	putevka_count INT NOT NULL,
+	statuss VARCHAR(50) NOT NULL,
+	id_user INT NOT NULL,
+	FOREIGN KEY (id_city) REFERENCES City(id) ON DELETE NO ACTION,
+	FOREIGN KEY (id_vid) REFERENCES Vid(id) ON DELETE NO ACTION,
+	FOREIGN KEY (id_vid_transp) REFERENCES Vid_Transp(id) ON DELETE NO ACTION,
+	FOREIGN KEY (id_typpe) REFERENCES Typpe(id) ON DELETE NO ACTION,
+	FOREIGN KEY (id_user) REFERENCES Users(id) ON DELETE NO ACTION
+)
+
+CREATE TABLE Obrasch
+(
+	id INT NOT NULL IDENTITY(1,1) PRIMARY KEY,
+	date_time DATETIME NOT NULL,
+	textt TEXT NOT NULL,
+	obr_type VARCHAR(50) NOT NULL,
+	comment TEXT NOT NULL,
+	prefered_tour TEXT NOT NULL,
+	id_user INT NOT NULL,
+	id_mng INT NOT NULL,
+	FOREIGN KEY (id_user) REFERENCES Users(id) ON DELETE NO ACTION,
+	FOREIGN KEY (id_mng) REFERENCES Managers(id) ON DELETE NO ACTION
+)
