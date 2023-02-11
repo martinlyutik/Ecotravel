@@ -68,8 +68,20 @@
     <Compile Include="Main\Catalog.xaml.cs">
       <DependentUpon>Catalog.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Managers\Functions\DeleteTicket.xaml.cs">
+      <DependentUpon>DeleteTicket.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Managers\Functions\UpdateTicketStatus.xaml.cs">
+      <DependentUpon>UpdateTicketStatus.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Managers\ManagerProfile.xaml.cs">
       <DependentUpon>ManagerProfile.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Managers\SelectAllTickets.xaml.cs">
+      <DependentUpon>SelectAllTickets.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Managers\SelectAllUsers.xaml.cs">
+      <DependentUpon>SelectAllUsers.xaml</DependentUpon>
     </Compile>
     <Compile Include="TourDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -132,7 +144,23 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Managers\Functions\DeleteTicket.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Managers\Functions\UpdateTicketStatus.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Managers\ManagerProfile.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Managers\SelectAllTickets.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Managers\SelectAllUsers.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

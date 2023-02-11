@@ -32,5 +32,17 @@ namespace Tour.Managers
             Authentification.LogIn log = new Authentification.LogIn();
             log.Show();
         }
+
+        private void SelectAllUsers_Click(object sender, RoutedEventArgs e)
+        {
+            SelectAllUsers all = new SelectAllUsers();
+            all.Show();
+        }
+
+        private void WorkOnTickets_Click(object sender, RoutedEventArgs e)
+        {
+            SelectAllTickets tick = new SelectAllTickets();
+            tick.Show();
+        }
     }
 }

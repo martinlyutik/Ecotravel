@@ -13,7 +13,9 @@ CREATE TABLE Managers
 INSERT INTO Managers 
 (fio, number, email, loginn, passwrd)
 VALUES
-('Габец Олег Евгеньвич','+375448907865','none@mail.ru','mng2','mng2')
+('admin','admin','admin','admin','admin')
+
+SELECT * FROM Users
 
 SELECT * FROM Managers
 
@@ -178,11 +180,24 @@ CREATE TABLE ticket
 	FOREIGN KEY (id_user) REFERENCES Users(id) ON DELETE NO ACTION
 )
 
+SELECT ticket.id, City.namme, Vid.namme, Vid_Transp.namme, Typpe.namme, ticket.date_podachi, ticket.date_start, ticket.day_count, ticket.putevka_count, ticket.statuss, Users.id
+FROM ticket
+                    LEFT JOIN City
+                    ON ticket.id_city = City.id
+                    LEFT JOIN Vid
+                    ON ticket.id_vid = Vid.id
+                    LEFT JOIN Vid_Transp
+                    ON ticket.id_vid_transp = Vid_Transp.id
+                    LEFT JOIN Typpe
+                    ON ticket.id_typpe = Typpe.id
+                    LEFT JOIN Users
+                    ON ticket.id_user = Users.id
+
 SELECT ticket.id, City.namme, ticket.statuss, ticket.date_podachi
 FROM ticket
 LEFT JOIN City
 ON ticket.id_city = City.id
-WHERE id_user = 4;
+WHERE id_user = 4
 
 SELECT * FROM ticket
 

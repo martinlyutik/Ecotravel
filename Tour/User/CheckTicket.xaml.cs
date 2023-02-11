@@ -32,7 +32,8 @@ namespace Tour.User
                     "FROM ticket " +
                     "LEFT JOIN City " +
                     "ON id_city = City.id " +
-                    "WHERE ticket.id_user = " + user.Id, db.GetConnection());
+                    "WHERE ticket.id_user = " + user.Id, 
+                    db.GetConnection());
 
                 db.OpenConnection();
 
