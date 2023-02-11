@@ -65,6 +65,9 @@
       <DependentUpon>SelectAllManagers.xaml</DependentUpon>
     </Compile>
     <Compile Include="Clsasses\Manager.cs" />
+    <Compile Include="Main\Catalog.xaml.cs">
+      <DependentUpon>Catalog.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Managers\ManagerProfile.xaml.cs">
       <DependentUpon>ManagerProfile.xaml</DependentUpon>
     </Compile>
@@ -72,6 +75,12 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>TourDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="User\CheckTicket.xaml.cs">
+      <DependentUpon>CheckTicket.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="User\TicketTour.xaml.cs">
+      <DependentUpon>TicketTour.xaml</DependentUpon>
     </Compile>
     <Compile Include="User\UpdateInfoUser.xaml.cs">
       <DependentUpon>UpdateInfoUser.xaml</DependentUpon>
@@ -119,7 +128,19 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Main\Catalog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Managers\ManagerProfile.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="User\CheckTicket.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="User\TicketTour.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -1,0 +1,27 @@
+﻿<Window x:Class="Tour.User.CheckTicket"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Tour.User"
+        mc:Ignorable="d"
+        Title="Мои заявки" Height="300" Width="600">
+    <Grid>
+        <Rectangle HorizontalAlignment="Center" Height="49" Stroke="#FFB5D5CA" VerticalAlignment="Top" Width="600" Fill="#FFB5D5CA"/>
+        <Button Content="Назад" HorizontalAlignment="Left" Margin="540,15,0,0" VerticalAlignment="Top" BorderBrush="#FFB5D5CA" Background="#FFB5D5CA" Click="BackButton_Click"/>
+        <Label Content="Tour" HorizontalAlignment="Left" Margin="25,4,0,0" VerticalAlignment="Top" FontSize="18" FontWeight="Bold" Width="52" RenderTransformOrigin="0.5,0.5">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleY="0.252"/>
+                    <RotateTransform/>
+                    <TranslateTransform Y="0.396"/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Label Content="Мои заявки" HorizontalAlignment="Center" Margin="0,6,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="18"/>
+
+        <ListView x:Name="Tickets" Margin="0,49,0,0" BorderBrush="White"/>
+
+    </Grid>
+</Window>

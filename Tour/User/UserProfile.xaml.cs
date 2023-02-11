@@ -48,7 +48,15 @@ namespace Tour.User
 
         private void OpenCatalog_Click(object sender, RoutedEventArgs e)
         {
+            this.Hide();
+            Main.Catalog catalog = new Main.Catalog(_user);
+            catalog.Show();
+        }
 
+        private void CheckTickets_Click(object sender, RoutedEventArgs e)
+        {
+            CheckTicket tick = new CheckTicket(_user);
+            tick.Show();
         }
     }
 }
