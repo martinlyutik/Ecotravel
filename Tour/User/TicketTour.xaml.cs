@@ -109,7 +109,7 @@ namespace Tour.User
                     "'" + DateStart.SelectedDate + "'," +
                     "'" + KolvoDney.SelectedItem + "'," +
                     "'" + KolvoPutevok.Text + "'," +
-                    "'', " + 
+                    "'Подано', " + 
                     "'" + _user.Id + "')", db.GetConnection()); ;
 
                 db.OpenConnection();

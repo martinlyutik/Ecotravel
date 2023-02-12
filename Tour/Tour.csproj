@@ -61,6 +61,12 @@
     <Compile Include="Admin\Functions\CreateNewUser.xaml.cs">
       <DependentUpon>CreateNewUser.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Admin\Functions\DeleteMng.xaml.cs">
+      <DependentUpon>DeleteMng.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Functions\DeleteUser.xaml.cs">
+      <DependentUpon>DeleteUser.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Admin\Functions\SelectAllManagers.xaml.cs">
       <DependentUpon>SelectAllManagers.xaml</DependentUpon>
     </Compile>
@@ -109,6 +115,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Admin\Functions\CreateNewUser.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Admin\Functions\DeleteMng.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Admin\Functions\DeleteUser.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

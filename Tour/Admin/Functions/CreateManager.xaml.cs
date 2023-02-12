@@ -18,9 +18,6 @@ using Tour.Authentification;
 
 namespace Tour.Admin.Functions
 {
-    /// <summary>
-    /// Логика взаимодействия для CreateManager.xaml
-    /// </summary>
     public partial class CreateManager : Window
     {
         public CreateManager()

@@ -173,11 +173,11 @@ CREATE TABLE ticket
 	putevka_count INT NOT NULL,
 	statuss VARCHAR(50),
 	id_user INT NOT NULL,
-	FOREIGN KEY (id_city) REFERENCES City(id) ON DELETE NO ACTION,
-	FOREIGN KEY (id_vid) REFERENCES Vid(id) ON DELETE NO ACTION,
-	FOREIGN KEY (id_vid_transp) REFERENCES Vid_Transp(id) ON DELETE NO ACTION,
-	FOREIGN KEY (id_typpe) REFERENCES Typpe(id) ON DELETE NO ACTION,
-	FOREIGN KEY (id_user) REFERENCES Users(id) ON DELETE NO ACTION
+	FOREIGN KEY (id_city) REFERENCES City(id) ON DELETE CASCADE,
+	FOREIGN KEY (id_vid) REFERENCES Vid(id) ON DELETE CASCADE,
+	FOREIGN KEY (id_vid_transp) REFERENCES Vid_Transp(id) ON DELETE CASCADE,
+	FOREIGN KEY (id_typpe) REFERENCES Typpe(id) ON DELETE CASCADE,
+	FOREIGN KEY (id_user) REFERENCES Users(id) ON DELETE CASCADE
 )
 
 SELECT ticket.id, City.namme, Vid.namme, Vid_Transp.namme, Typpe.namme, ticket.date_podachi, ticket.date_start, ticket.day_count, ticket.putevka_count, ticket.statuss, Users.id
@@ -236,3 +236,5 @@ CREATE TABLE Obrasch
 	FOREIGN KEY (id_user) REFERENCES Users(id) ON DELETE NO ACTION,
 	FOREIGN KEY (id_mng) REFERENCES Managers(id) ON DELETE NO ACTION
 )
+
+DELETE FROM Users WHERE id = 3

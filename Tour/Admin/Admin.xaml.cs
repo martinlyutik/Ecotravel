@@ -69,5 +69,11 @@ namespace Tour.Admin
             SelectAllManagers mng = new SelectAllManagers();
             mng.Show();
         }
+
+        private void DeleteUser_Click(object sender, RoutedEventArgs e)
+        {
+            Functions.DeleteUser user = new Functions.DeleteUser();
+            user.Show();
+        }
     }
 }

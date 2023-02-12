@@ -13,7 +13,7 @@
         <Label Content="Введите пароль:" HorizontalAlignment="Center" Margin="0,181,0,0" VerticalAlignment="Top" Width="160"/>
         <Button x:Name="LogInButton" Content="Войти" HorizontalAlignment="Left" Margin="320,246,0,0" VerticalAlignment="Top" Height="30" Width="170" Click="LogInButton_Click" Background="#FFD1EEFC"/>
         <Label Content="Не зарегистрированы?" HorizontalAlignment="Center" Margin="0,283,0,0" VerticalAlignment="Top" Width="160"/>
-        <Button x:Name="SignUp" Content="Регистрация" HorizontalAlignment="Left" Margin="320,309,0,0" VerticalAlignment="Top" Height="24" Width="80" Click="SignUpButton_Click" Background="White" BorderBrush="White"/>
+        <Button x:Name="SignUp" Content="Регистрация" HorizontalAlignment="Left" Margin="310,309,0,0" VerticalAlignment="Top" Height="24" Width="90" Click="SignUpButton_Click" Background="White" BorderBrush="White"/>
         <Rectangle HorizontalAlignment="Center" Height="50" Stroke="#FFB5D5CA" VerticalAlignment="Top" Width="800" Fill="#FFB5D5CA"/>
         <Label Content="Tour" HorizontalAlignment="Left" Margin="380,9,0,0" VerticalAlignment="Top" FontSize="18" FontWeight="Bold" Width="52" RenderTransformOrigin="0.5,0.5">
             <Label.RenderTransform>

@@ -40,6 +40,6 @@
         </Label>
         <Rectangle HorizontalAlignment="Center" Height="35" Stroke="#FFE0A9AF" VerticalAlignment="Top" Width="800" Fill="#FFE0A9AF" Margin="0,49,0,0"/>
         <Label Content="Профиль администратора" HorizontalAlignment="Center" Margin="0,54,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
-        <Button Content="Вывести список менеджеров" HorizontalAlignment="Left" Margin="37,134,0,0" VerticalAlignment="Top" Height="30" Background="#FFD1EEFC" Width="183" Click="SelectMng_Click"/>
+        <Button Content="Удалить менеджера" HorizontalAlignment="Left" Margin="37,169,0,0" VerticalAlignment="Top" Height="30" Background="#FFD1EEFC" Width="183" Click="DeleteMng_Click"/>
     </Grid>
 </Window>

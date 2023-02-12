@@ -47,5 +47,11 @@ namespace Tour.Admin.Functions
         {
             this.Hide();
         }
+
+        private void DeleteMng_Click(object sender, RoutedEventArgs e)
+        {
+            DeleteMng mng = new DeleteMng();
+            mng.Show();
+        }
     }
 }
