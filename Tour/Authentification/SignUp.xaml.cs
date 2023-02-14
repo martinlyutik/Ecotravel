@@ -14,6 +14,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using Tour.Classes;
 
 namespace Tour.Authentification
 {
@@ -72,7 +73,7 @@ namespace Tour.Authentification
                 Match MV = R.Match(Visa.Text);
                 Match ME = R.Match(Email.Text);
                 Match MNu = R.Match(Number.Text);
-                Match MPs = R.Match(Pass.Password);
+                Match MPs = R.Match(Pass.Password);                
 
                 for (int i = 0; i < Surname.Text.Length; i++)
                 {                    
@@ -157,7 +158,7 @@ namespace Tour.Authentification
                     + Otch.Text + "', '"
                     + Passport.Text + "', '" + Visa.Text + "', '"
                     + Email.Text + "', '" + Number.Text + "', '"
-                    + Pass.Password + "')", db.GetConnection());
+                    + Md5.HashPassword(Pass.Password) + "')", db.GetConnection());
 
                 db.OpenConnection();
 

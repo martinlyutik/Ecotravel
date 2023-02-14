@@ -20,7 +20,11 @@
             </Label.RenderTransform>
         </Label>
         <Label Content="Каталог" HorizontalAlignment="Center" Margin="0,6,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="18"/>
-        <Button Content="Оставить заявку" HorizontalAlignment="Left" Margin="552,74,0,0" VerticalAlignment="Top" Height="30" Background="#FFD1EEFC" Width="183" Click="CreateTicket_Click"/>
+        <Button Content="Оставить заявку" HorizontalAlignment="Center" Margin="0,364,0,0" VerticalAlignment="Top" Height="30" Background="#FFD1EEFC" Width="184" Click="CreateTicket_Click"/>
+        <ListBox x:Name="CountryList"  Margin="156,110,414,85" ToolTip="Страны"/>
+        <ListBox x:Name="CityList"  Margin="400,110,169,85" ToolTip="Города"/>
+        <Label Content="Страны" HorizontalAlignment="Left" Margin="156,69,0,0" VerticalAlignment="Top" Width="230" FontSize="16" FontWeight="Bold" HorizontalContentAlignment="Center"/>
+        <Label Content="Города" HorizontalAlignment="Left" Margin="400,69,0,0" VerticalAlignment="Top" Width="231" FontSize="16" FontWeight="Bold" HorizontalContentAlignment="Center"/>
 
     </Grid>
 </Window>

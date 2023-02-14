@@ -71,6 +71,7 @@
       <DependentUpon>SelectAllManagers.xaml</DependentUpon>
     </Compile>
     <Compile Include="Clsasses\Manager.cs" />
+    <Compile Include="Clsasses\Md5.cs" />
     <Compile Include="Main\Catalog.xaml.cs">
       <DependentUpon>Catalog.xaml</DependentUpon>
     </Compile>
@@ -97,7 +98,7 @@
     <Compile Include="User\CheckTicket.xaml.cs">
       <DependentUpon>CheckTicket.xaml</DependentUpon>
     </Compile>
-    <Compile Include="User\TicketTour.xaml.cs">
+    <Compile Include="Main\TicketTour.xaml.cs">
       <DependentUpon>TicketTour.xaml</DependentUpon>
     </Compile>
     <Compile Include="User\UpdateInfoUser.xaml.cs">
@@ -182,7 +183,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="User\TicketTour.xaml">
+    <Page Include="Main\TicketTour.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

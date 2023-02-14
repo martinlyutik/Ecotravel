@@ -35,9 +35,9 @@ namespace Tour.Authentification
 
                 SqlDataAdapter adapter = new SqlDataAdapter();
 
-                SqlCommand command = new SqlCommand("SELECT * FROM Users WHERE number = '" + Number.Text + "' AND passwrd = '" + Pass.Password + "'", db.GetConnection());
+                SqlCommand command = new SqlCommand("SELECT * FROM Users WHERE number = '" + Number.Text + "' AND passwrd = '" + Md5.HashPassword(Pass.Password) + "'", db.GetConnection());
 
-                SqlCommand cmd = new SqlCommand("SELECT * FROM Managers WHERE loginn = '" + Number.Text + "' AND passwrd = '" + Pass.Password + "'", db.GetConnection());
+                SqlCommand cmd = new SqlCommand("SELECT * FROM Managers WHERE loginn = '" + Number.Text + "' AND passwrd = '" + Md5.HashPassword(Pass.Password) + "'", db.GetConnection());
 
                 DataTable tbl = new DataTable();
 
@@ -117,7 +117,7 @@ namespace Tour.Authentification
             } 
             catch 
             { 
-                MessageBox.Show("Ошмбка!"); 
+                MessageBox.Show("Ошибка!"); 
             }            
         }
 

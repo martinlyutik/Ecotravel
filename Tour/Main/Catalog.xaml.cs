@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -23,11 +25,37 @@ namespace Tour.Main
             InitializeComponent();
 
             _user = user;
+
+            DB db = new DB();
+
+            SqlCommand command = new SqlCommand("SELECT namme FROM Country", db.GetConnection());
+
+            SqlCommand cmd = new SqlCommand("SELECT namme FROM City", db.GetConnection());
+
+            db.OpenConnection();
+
+            SqlDataReader reader = command.ExecuteReader();
+
+            while (reader.Read())
+            {
+                CountryList.Items.Add(reader[0].ToString());
+            }
+            reader.Close();
+
+            SqlDataReader rdr = cmd.ExecuteReader();
+
+            while (rdr.Read())
+            {
+                CityList.Items.Add(rdr[0].ToString());
+            }
+            rdr.Close();
+
+            db.CloseConnection();
         }
 
         private void CreateTicket_Click(object sender, RoutedEventArgs e)
         {
-            User.TicketTour tick = new User.TicketTour(_user);
+            Main.TicketTour tick = new Main.TicketTour(_user);
             tick.Show();
         }
 

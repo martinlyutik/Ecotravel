@@ -43,7 +43,7 @@ namespace Tour.Admin.Functions
 
             if (table.Rows.Count > 0)
             {
-                MessageBox.Show("Данный логин уже занят!");
+                MessageBox.Show("Данный телефон уже зарегистрирован!");
                 return true;
             }
             else
@@ -156,7 +156,7 @@ namespace Tour.Admin.Functions
                     + Otch.Text + "', '"
                     + Passport.Text + "', '" + Visa.Text + "', '"
                     + Email.Text + "', '" + Number.Text + "', '"
-                    + Pass.Password + "')", db.GetConnection());
+                    + Classes.Md5.HashPassword(Pass.Password) + "')", db.GetConnection());
 
                 db.OpenConnection();
 
@@ -164,8 +164,6 @@ namespace Tour.Admin.Functions
                 {
                     MessageBox.Show("Пользователь создан успешно!");
                     this.Hide();
-                    LogIn log = new LogIn();
-                    log.Show();
                 }
 
                 db.CloseConnection();

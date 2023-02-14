@@ -7,13 +7,13 @@
         mc:Ignorable="d"
         Title="Вывести всех менеджеров" Height="450" Width="800">
     <Grid>
-        <ListView x:Name="OutputDb" Margin="300,134,36,57" ToolTip="База данных">
+        <ListView x:Name="OutputDb" Margin="275,134,36,57" ToolTip="База данных">
             <ListView.View>
                 <GridView>
                     <GridViewColumn DisplayMemberBinding="{Binding Path=id}"
                                     Header="id" Width="25"/>
                     <GridViewColumn DisplayMemberBinding="{Binding Path=fio}"
-                                    Header="Ф.И.О." Width="70"/>
+                                    Header="Ф.И.О." Width="90"/>
                     <GridViewColumn DisplayMemberBinding="{Binding Path=number}"
                                     Header="Телефон" Width="90"/>
                     <GridViewColumn DisplayMemberBinding="{Binding Path=email}"
@@ -25,7 +25,7 @@
                 </GridView>
             </ListView.View>
         </ListView>
-        <Button Content="Вывести список менеджерей" HorizontalAlignment="Left" Margin="37,134,0,0" VerticalAlignment="Top" Height="30" Background="#FFD1EEFC" Width="183" Click="SelectMng_Click"/>
+        <Button Content="Вывести список менеджеров" HorizontalAlignment="Left" Margin="37,134,0,0" VerticalAlignment="Top" Height="30" Background="#FFD1EEFC" Width="183" Click="SelectMng_Click"/>
         <Rectangle HorizontalAlignment="Center" Height="49" Stroke="#FFB5D5CA" VerticalAlignment="Top" Width="800" Fill="#FFB5D5CA"/>
         <Button Content="Назад" HorizontalAlignment="Left" Margin="735,15,0,0" VerticalAlignment="Top" BorderBrush="#FFB5D5CA" Background="#FFB5D5CA" Click="BackButton_Click"/>
         <Label Content="Tour" HorizontalAlignment="Left" Margin="25,9,0,0" VerticalAlignment="Top" FontSize="18" FontWeight="Bold" Width="52" RenderTransformOrigin="0.5,0.5">

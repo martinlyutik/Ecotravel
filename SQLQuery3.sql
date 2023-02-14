@@ -13,11 +13,15 @@ CREATE TABLE Managers
 INSERT INTO Managers 
 (fio, number, email, loginn, passwrd)
 VALUES
-('admin','admin','admin','admin','admin')
+('admin','admin','admin','admin','21232f297a57a5a743894a0e4a801fc3')
 
 SELECT * FROM Users
 
 SELECT * FROM Managers
+
+UPDATE Users SET passwrd = 'b59c67bf196a4758191e42f76670ceba' WHERE id = 6
+
+DROP TABLE Managers
 
 CREATE TABLE Country
 (

@@ -15,7 +15,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Runtime.Remoting.Messaging;
 
-namespace Tour.User
+namespace Tour.Main
 {
     public partial class TicketTour : Window
     {

@@ -124,16 +124,14 @@ namespace Tour.Admin.Functions
                     "email, loginn, passwrd) VALUES " +
                     "('" + Fio.Text + "', '" + Number.Text + "', '"
                     + Email.Text + "', '" + Login.Text + "', '"
-                    + Password.Password + "')", db.GetConnection());
+                    + Classes.Md5.HashPassword(Password.Password) + "')", db.GetConnection());
 
                 db.OpenConnection();
 
                 if (command.ExecuteNonQuery() > 0)
                 {
-                    MessageBox.Show("Пользователь создан успешно!");
+                    MessageBox.Show("Менеджер создан успешно!");
                     this.Hide();
-                    LogIn log = new LogIn();
-                    log.Show();
                 }
 
                 db.CloseConnection();
