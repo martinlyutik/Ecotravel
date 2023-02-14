@@ -14,6 +14,7 @@ using System.Windows.Shapes;
 using System.Data;
 using System.Data.SqlClient;
 using System.Runtime.Remoting.Messaging;
+using System.Text.RegularExpressions;
 
 namespace Tour.Main
 {
@@ -89,6 +90,57 @@ namespace Tour.Main
         {
             try
             {
+                if (City.SelectedItem == null || VidRazm.SelectedItem == null
+                    || VidTrans.SelectedItem == null 
+                    || Typpe.SelectedItem == null 
+                    || KolvoDney.SelectedItem == null || DateStart == null)
+                {
+                    MessageBox.Show("Выберите параметры!");
+                    return;
+                }
+
+                Regex R = new Regex("\\s+");
+                Match MK = R.Match(KolvoPutevok.Text);
+
+                for (int i = 0; i < KolvoPutevok.Text.Length; i++)
+                {
+                    if (MK.Success)
+                    {
+                        MessageBox.Show("Поле не может содержать пробелы!");
+                        return;
+                    }
+
+                    if (Convert.ToInt32(KolvoPutevok.Text[i]) < 0)
+                    {
+                        MessageBox.Show("Количесвто путевок не может быть отрицательным!");
+                        return;
+                    }
+
+                    if (KolvoPutevok.Text[i] >= 'А' && KolvoPutevok.Text[i] <= 'Я')
+                    {
+                        MessageBox.Show("Введите цифры!");
+                        return;
+                    }
+
+                    if (KolvoPutevok.Text[i] >= 'A' && KolvoPutevok.Text[i] <= 'Z')
+                    {
+                        MessageBox.Show("Введите цифры!");
+                        return;
+                    }
+
+                    if (KolvoPutevok.Text[i] >= 'а' && KolvoPutevok.Text[i] <= 'я')
+                    {
+                        MessageBox.Show("Введите цифры!");
+                        return;
+                    }
+
+                    if (KolvoPutevok.Text[i] >= 'a' && KolvoPutevok.Text[i] <= 'z')
+                    {
+                        MessageBox.Show("Введите цифры!");
+                        return;
+                    }
+                }
+
                 DB db = new DB();
 
                 string Now = DateTime.Now.ToString("MM'/'dd'/'yyyy HH:mm");

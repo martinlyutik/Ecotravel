@@ -1,0 +1,22 @@
+﻿<Window x:Class="Tour.Admin.Functions.UpdateTourFunctions.Delete.DeleteTypeVac"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Tour.Admin.Functions.UpdateTourFunctions.Delete"
+        mc:Ignorable="d"
+        Title="Удалить тип отдыха" Height="200" Width="400">
+    <Grid>
+        <Button Content="Удалить тип отдыха" HorizontalAlignment="Left" Margin="167,0,0,0" VerticalAlignment="Center" Height="30" Background="#FFD1EEFC" Width="152" Click="DeleteTypeVac_Click"/>
+        <ComboBox x:Name="TypeVac" HorizontalAlignment="Left" Margin="85,0,0,0" VerticalAlignment="Center" Width="78" BorderBrush="#FFFFFCD6" Height="30">
+            <ComboBox.Background>
+                <LinearGradientBrush EndPoint="0,1">
+                    <GradientStop Color="#FFF0F0F0"/>
+                    <GradientStop Color="#FFFFFCD6" Offset="1"/>
+                </LinearGradientBrush>
+            </ComboBox.Background>
+        </ComboBox>
+        <Label Content="Id:" HorizontalAlignment="Left" Margin="55,0,0,0" VerticalAlignment="Center" Width="25" Height="30"/>
+
+    </Grid>
+</Window>

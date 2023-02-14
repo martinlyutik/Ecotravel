@@ -10,17 +10,6 @@ CREATE TABLE Managers
 	passwrd VARCHAR(50) NOT NULL
 )
 
-INSERT INTO Managers 
-(fio, number, email, loginn, passwrd)
-VALUES
-('admin','admin','admin','admin','21232f297a57a5a743894a0e4a801fc3')
-
-SELECT * FROM Users
-
-SELECT * FROM Managers
-
-UPDATE Users SET passwrd = 'b59c67bf196a4758191e42f76670ceba' WHERE id = 6
-
 DROP TABLE Managers
 
 CREATE TABLE Country
@@ -46,18 +35,21 @@ VALUES
 ('1','Варна'),
 ('3','Гренна')
 
-SELECT Country.namme, City.namme 
-FROM Country
-LEFT JOIN City
-ON Country.id = City.id_country
+SELECT * FROM Country
+
+UPDATE Country SET namme = 'Венгрия' WHERE id = 6
 
 CREATE TABLE City
 (
 	id INT NOT NULL IDENTITY(1,1) PRIMARY KEY,
 	id_country INT NOT NULL,
 	namme VARCHAR(50) NOT NULL,
-	FOREIGN KEY (id_country) REFERENCES Country (id) ON DELETE NO ACTION
+	FOREIGN KEY (id_country) REFERENCES Country (id) ON DELETE CASCADE
 )
+
+DROP TABLE City
+
+DROP TABLE Country
 
 CREATE TABLE Vid
 (
@@ -102,7 +94,7 @@ VALUES
 ('Поезд'),
 ('Каршеринг')
 
-
+DROP TABLE Vid_Transp
 
 DROP TABLE Cost_Transp
 
@@ -112,9 +104,11 @@ CREATE TABLE Cost_Transp
 	service_level VARCHAR(50) NOT NULL,
 	id_vid_transp INT NOT NULL,
 	id_city INT NOT NULL,
-	FOREIGN KEY (id_vid_transp) REFERENCES Vid_Transp (id) ON DELETE NO ACTION,
-	FOREIGN KEY (id_city) REFERENCES City (id) ON DELETE NO ACTION
+	FOREIGN KEY (id_vid_transp) REFERENCES Vid_Transp (id) ON DELETE CASCADE,
+	FOREIGN KEY (id_city) REFERENCES City (id) ON DELETE CASCADE
 )
+
+DROP TABLE Cost_Transp
 
 INSERT INTO Cost_Transp
 (cost, service_level, id_vid_transp, id_city)
@@ -125,14 +119,6 @@ VALUES
 ('2','3/5','1','2'),
 ('3','3/5','1','3')
 
-SELECT Cost_Transp.cost, Cost_Transp.service_level,
-Vid_Transp.namme, City.namme
-FROM Cost_Transp
-LEFT JOIN Vid_Transp
-ON Cost_Transp.id_vid_transp = Vid_Transp.id
-LEFT JOIN City
-ON Cost_Transp.id_city = City.id
-
 CREATE TABLE Razmesch
 (
 	id INT NOT NULL IDENTITY(1,1) PRIMARY KEY,
@@ -142,9 +128,11 @@ CREATE TABLE Razmesch
 	cost_per_day INT NOT NULL,
 	id_vid INT NOT NULL,
 	id_city INT NOT NULL,
-	FOREIGN KEY (id_vid) REFERENCES Vid(id) ON DELETE NO ACTION,
-	FOREIGN KEY (id_city) REFERENCES City(id) ON DELETE NO ACTION
+	FOREIGN KEY (id_vid) REFERENCES Vid(id) ON DELETE CASCADE,
+	FOREIGN KEY (id_city) REFERENCES City(id) ON DELETE CASCADE
 )
+
+DROP TABLE Razmesch
 
 INSERT INTO Razmesch
 (namme, adress, service_level, cost_per_day, id_vid, id_city)
@@ -153,16 +141,6 @@ VALUES
 ('Хостел Швеция','Швицлиан 34','Койко-место','20','2','5'),
 ('Отель Звезда','Нечипоренко 8','Завтраки','90','1','2'),
 ('Квартира 8','Постбулг 14','Самообслуживание','100','3','4')
-
-SELECT * FROM Razmesch
-
-SELECT Razmesch.namme, Razmesch.adress, Razmesch.service_level, Razmesch.cost_per_day,
-Vid.namme, City.namme
-FROM Razmesch
-INNER JOIN Vid
-ON Razmesch.id_vid = (SELECT id FROM Vid WHERE namme = 'Отель')
-INNER JOIN City
-ON Razmesch.id_city = (SELECT id FROM City WHERE namme = 'Абай')
 
 CREATE TABLE ticket
 (
@@ -184,48 +162,17 @@ CREATE TABLE ticket
 	FOREIGN KEY (id_user) REFERENCES Users(id) ON DELETE CASCADE
 )
 
-SELECT ticket.id, City.namme, Vid.namme, Vid_Transp.namme, Typpe.namme, ticket.date_podachi, ticket.date_start, ticket.day_count, ticket.putevka_count, ticket.statuss, Users.id
-FROM ticket
-                    LEFT JOIN City
-                    ON ticket.id_city = City.id
-                    LEFT JOIN Vid
-                    ON ticket.id_vid = Vid.id
-                    LEFT JOIN Vid_Transp
-                    ON ticket.id_vid_transp = Vid_Transp.id
-                    LEFT JOIN Typpe
-                    ON ticket.id_typpe = Typpe.id
-                    LEFT JOIN Users
-                    ON ticket.id_user = Users.id
-
-SELECT ticket.id, City.namme, ticket.statuss, ticket.date_podachi
-FROM ticket
-LEFT JOIN City
-ON ticket.id_city = City.id
-WHERE id_user = 4
-
-SELECT * FROM ticket
-
-UPDATE ticket SET statuss = 'На утверждении' WHERE id = 2;
-
-INSERT INTO ticket
-(id_city, id_vid, id_vid_transp, id_typpe, date_podachi, date_start, day_count, putevka_count, statuss, id_user) 
-VALUES 
-(
-(SELECT id FROM City WHERE namme = 'Абай'),
-(SELECT id FROM Vid WHERE namme = 'Отель'),
-(SELECT id FROM Vid_Transp WHERE namme = 'Троллейбус'),
-(SELECT id FROM Typpe WHERE namme = 'Путешествие'), 
-'11.02.2023;15:52',
-'15.02.2023',
-'14',
-'2',
-'',
-'1'
-)
-
-SELECT * FROM Users
-
 DROP TABLE ticket
+
+DROP TABLE Vid
+
+DROP TABLE Vid_Transp
+
+DROP TABLE Typpe
+
+DROP TABLE Country
+
+DROP TABLE City
 
 CREATE TABLE Obrasch
 (
@@ -237,8 +184,8 @@ CREATE TABLE Obrasch
 	prefered_tour TEXT NOT NULL,
 	id_user INT NOT NULL,
 	id_mng INT NOT NULL,
-	FOREIGN KEY (id_user) REFERENCES Users(id) ON DELETE NO ACTION,
-	FOREIGN KEY (id_mng) REFERENCES Managers(id) ON DELETE NO ACTION
+	FOREIGN KEY (id_user) REFERENCES Users(id) ON DELETE CASCADE,
+	FOREIGN KEY (id_mng) REFERENCES Managers(id) ON DELETE CASCADE
 )
 
-DELETE FROM Users WHERE id = 3
+DROP TABLE Obrasch

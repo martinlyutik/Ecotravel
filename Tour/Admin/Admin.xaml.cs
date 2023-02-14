@@ -75,5 +75,12 @@ namespace Tour.Admin
             Functions.DeleteUser user = new Functions.DeleteUser();
             user.Show();
         }
+
+        private void UpdtTours_Click(object sender, RoutedEventArgs e)
+        {
+            this.Hide();
+            Functions.UpdateTours updt = new Functions.UpdateTours();
+            updt.Show();
+        }
     }
 }

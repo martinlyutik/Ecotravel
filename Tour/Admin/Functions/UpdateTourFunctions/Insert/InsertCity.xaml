@@ -1,0 +1,17 @@
+﻿<Window x:Class="Tour.Admin.Functions.UpdateTourFunctions.Insert.InsertCity"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Tour.Admin.Functions.UpdateTourFunctions.Insert"
+        mc:Ignorable="d"
+        Title="Добавить город" Height="200" Width="400">
+    <Grid>
+        <ComboBox x:Name="Country" HorizontalAlignment="Left" Margin="203,65,0,0" VerticalAlignment="Top" Width="119"/>
+        <TextBox x:Name="City" HorizontalAlignment="Left" Margin="78,65,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="22"/>
+        <Label Content="Город" HorizontalAlignment="Left" Margin="73,39,0,0" VerticalAlignment="Top"/>
+        <Label Content="Страна" HorizontalAlignment="Left" Margin="199,39,0,0" VerticalAlignment="Top"/>
+        <Button Content="Добавить страну" HorizontalAlignment="Center" Margin="0,92,0,0" VerticalAlignment="Top" Height="30" Background="#FFD1EEFC" Width="244" Click="InsertCity_Click"/>
+
+    </Grid>
+</Window>

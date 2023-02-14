@@ -70,6 +70,30 @@
     <Compile Include="Admin\Functions\SelectAllManagers.xaml.cs">
       <DependentUpon>SelectAllManagers.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Admin\Functions\UpdateTourFunctions\Delete\DeleteCity.xaml.cs">
+      <DependentUpon>DeleteCity.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Functions\UpdateTourFunctions\Delete\DeleteCountry.xaml.cs">
+      <DependentUpon>DeleteCountry.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Functions\UpdateTourFunctions\Delete\DeleteTypeVac.xaml.cs">
+      <DependentUpon>DeleteTypeVac.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Functions\UpdateTourFunctions\Delete\DeleteVidRazm.xaml.cs">
+      <DependentUpon>DeleteVidRazm.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Functions\UpdateTourFunctions\Delete\DeleteVidTransp.xaml.cs">
+      <DependentUpon>DeleteVidTransp.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Functions\UpdateTourFunctions\Insert\InsertCity.xaml.cs">
+      <DependentUpon>InsertCity.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Functions\UpdateTourFunctions\Insert\InsertCountry.xaml.cs">
+      <DependentUpon>InsertCountry.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Functions\UpdateTours.xaml.cs">
+      <DependentUpon>UpdateTours.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Clsasses\Manager.cs" />
     <Compile Include="Clsasses\Md5.cs" />
     <Compile Include="Main\Catalog.xaml.cs">
@@ -128,6 +152,38 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Admin\Functions\SelectAllManagers.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Admin\Functions\UpdateTourFunctions\Delete\DeleteCity.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Admin\Functions\UpdateTourFunctions\Delete\DeleteCountry.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Admin\Functions\UpdateTourFunctions\Delete\DeleteTypeVac.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Admin\Functions\UpdateTourFunctions\Delete\DeleteVidRazm.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Admin\Functions\UpdateTourFunctions\Delete\DeleteVidTransp.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Admin\Functions\UpdateTourFunctions\Insert\InsertCity.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Admin\Functions\UpdateTourFunctions\Insert\InsertCountry.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Admin\Functions\UpdateTours.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -233,5 +289,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

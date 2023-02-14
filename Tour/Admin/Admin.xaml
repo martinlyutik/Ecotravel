@@ -50,5 +50,6 @@
         <Button Content="Создать менеджера" HorizontalAlignment="Left" Margin="35,278,0,0" VerticalAlignment="Top" Height="30" Background="#FFD1EEFC" Width="183" Click="CreateManager_Click"/>
         <Button Content="Вывести список менеджеров" HorizontalAlignment="Left" Margin="35,241,0,0" VerticalAlignment="Top" Height="30" Background="#FFD1EEFC" Width="183" Click="SelectMng_Click"/>
         <Button Content="Удалить пользователя" HorizontalAlignment="Left" Margin="35,206,0,0" VerticalAlignment="Top" Height="30" Background="#FFD1EEFC" Width="183" Click="DeleteUser_Click"/>
+        <Button Content="Редактировать туры" HorizontalAlignment="Left" Margin="35,313,0,0" VerticalAlignment="Top" Height="30" Background="#FFD1EEFC" Width="183" Click="UpdtTours_Click"/>
     </Grid>
 </Window>

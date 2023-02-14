@@ -1,0 +1,17 @@
+﻿<Window x:Class="Tour.Admin.Functions.UpdateTourFunctions.Insert.InsertCountry"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Tour.Admin.Functions.UpdateTourFunctions.Insert"
+        mc:Ignorable="d"
+        Title="Добавить страну" Height="200" Width="400">
+    <Grid>
+        <TextBox x:Name="Country" HorizontalAlignment="Left" Margin="93,70,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="149" Height="30"/>
+        <Label Content="Введите название страны:" HorizontalAlignment="Left" Margin="88,39,0,0" VerticalAlignment="Top"/>
+        <Button Content="Добавить страну" HorizontalAlignment="Left" Margin="93,105,0,0" VerticalAlignment="Top" Height="30" Background="#FFD1EEFC" Width="225" Click="InsertCountry_Click"/>
+        <ComboBox x:Name="Visa" HorizontalAlignment="Left" Margin="253,70,0,0" VerticalAlignment="Top" Width="65" Height="30"/>
+        <Label Content="Виза:" HorizontalAlignment="Left" Margin="267,39,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
