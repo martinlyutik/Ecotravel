@@ -1,20 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
 using System.Text.RegularExpressions;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
-using Tour.Classes;
 
 namespace Tour.User
 {
@@ -25,6 +13,14 @@ namespace Tour.User
         {
             _id = user.Id;
             InitializeComponent();
+
+            Name.Text = user.Namme;
+            Surname.Text = user.Surname;
+            Otch.Text = user.Otch;
+            Email.Text = user.Email;
+            Visa.Text = user.Visa;
+            Number.Text = user.Number;
+            Passport.Text = user.Passport;
         }
 
         private void BackButton_Click(object sender, RoutedEventArgs e)

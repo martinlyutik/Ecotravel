@@ -9,25 +9,25 @@
     <Grid>
         <Rectangle HorizontalAlignment="Center" Height="49" Stroke="#FFB5D5CA" VerticalAlignment="Top" Width="800" Fill="#FFB5D5CA"/>
         <Button Content="Назад" HorizontalAlignment="Left" Margin="735,15,0,0" VerticalAlignment="Top" BorderBrush="#FFB5D5CA" Background="#FFB5D5CA" Click="BackButton_Click"/>
-        <TextBox MaxLength="50" x:Name="Surname" HorizontalAlignment="Left" Margin="165,210,0,0" TextWrapping="Wrap" Text="Фамилия" VerticalAlignment="Top" Width="120"/>
-        <TextBox MaxLength="50" x:Name="Otch" HorizontalAlignment="Left" Margin="165,316,0,0" TextWrapping="Wrap" Text="Отчество" VerticalAlignment="Top" Width="120"/>
-        <TextBox MaxLength="50" x:Name="Passport" HorizontalAlignment="Center" Margin="0,210,0,0" TextWrapping="Wrap" Text="Паспортные данные" VerticalAlignment="Top" Width="120"/>
-        <TextBox MaxLength="50" x:Name="Name" HorizontalAlignment="Left" Margin="165,263,0,0" TextWrapping="Wrap" Text="Имя" VerticalAlignment="Top" Width="120"/>
-        <TextBox MaxLength="50" x:Name="Visa" HorizontalAlignment="Center" Margin="0,262,0,0" TextWrapping="Wrap" Text="Виза" VerticalAlignment="Top" Width="120"/>
-        <TextBox MaxLength="50" x:Name="Email" HorizontalAlignment="Center" Margin="0,316,0,0" TextWrapping="Wrap" Text="Email" VerticalAlignment="Top" Width="120"/>
-        <TextBox MaxLength="50" x:Name="Number" HorizontalAlignment="Left" Margin="520,210,0,0" TextWrapping="Wrap" Text="Номер" VerticalAlignment="Top" Width="120"/>
-        <PasswordBox MaxLength="50" x:Name="Pass" HorizontalAlignment="Left" Margin="520,263,0,0" VerticalAlignment="Top" Width="120"/>
+        <TextBox MaxLength="50" x:Name="Surname" HorizontalAlignment="Left" Margin="150,190,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox MaxLength="50" x:Name="Otch" HorizontalAlignment="Left" Margin="150,249,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox MaxLength="50" x:Name="Passport" HorizontalAlignment="Left" Margin="375,190,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox MaxLength="50" x:Name="Name" HorizontalAlignment="Left" Margin="150,219,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox MaxLength="50" x:Name="Visa" HorizontalAlignment="Left" Margin="375,219,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox MaxLength="50" x:Name="Email" HorizontalAlignment="Left" Margin="600,190,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox MaxLength="50" x:Name="Number" HorizontalAlignment="Left" Margin="600,219,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <PasswordBox MaxLength="50" x:Name="Pass" HorizontalAlignment="Left" Margin="600,249,0,0" VerticalAlignment="Top" Width="120"/>
         <Rectangle HorizontalAlignment="Center" Height="35" Stroke="#FFE0A9AF" VerticalAlignment="Top" Width="800" Fill="#FFE0A9AF" Margin="0,49,0,0"/>
         <Label Content="Регистрация" HorizontalAlignment="Center" Margin="0,54,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
-        <Label Content="Введите фамилию:" HorizontalAlignment="Left" Margin="165,180,0,0" VerticalAlignment="Top" Height="25" Width="120"/>
-        <Label Content="Введите имя:" HorizontalAlignment="Left" Margin="165,233,0,0" VerticalAlignment="Top" Height="25" Width="120"/>
-        <Label Content="Введите отчество:" HorizontalAlignment="Left" Margin="165,286,0,0" VerticalAlignment="Top" Height="25" Width="120"/>
-        <Label Content="Введите паспортные  &#xD;&#xA;данные:" HorizontalAlignment="Left" Margin="340,163,0,0" VerticalAlignment="Top" Height="43" Width="130"/>
-        <Label Content="Введите визу:" HorizontalAlignment="Center" Margin="0,232,0,0" VerticalAlignment="Top" Height="26" Width="120"/>
-        <Label Content="Введите Email:" HorizontalAlignment="Center" Margin="0,286,0,0" VerticalAlignment="Top" Height="24" Width="120"/>
-        <Label Content="Введите Тел. Номер:" HorizontalAlignment="Left" Margin="520,180,0,0" VerticalAlignment="Top" Height="25" Width="130"/>
-        <Label Content="Введите пароль:" HorizontalAlignment="Left" Margin="520,233,0,0" VerticalAlignment="Top" Height="25" Width="120"/>
-        <Button Content="Зарегистрироваться" HorizontalAlignment="Left" Margin="520,314,0,0" VerticalAlignment="Top" Width="120" Background="#FFD1EEFC" Click="RegButton_Click"/>
+        <Label Content="Фамилия" HorizontalAlignment="Left" Margin="75,185,0,0" VerticalAlignment="Top" Height="25" Width="60"/>
+        <Label Content="Имя" HorizontalAlignment="Left" Margin="75,215,0,0" VerticalAlignment="Top" Height="25" Width="35"/>
+        <Label Content="Отчество" HorizontalAlignment="Left" Margin="75,244,0,0" VerticalAlignment="Top" Height="27" Width="65"/>
+        <Label Content="Паспорт" HorizontalAlignment="Left" Margin="300,185,0,0" VerticalAlignment="Top" Height="25" Width="60"/>
+        <Label Content="Виза" HorizontalAlignment="Left" Margin="300,215,0,0" VerticalAlignment="Top" Height="26" Width="35"/>
+        <Label Content="Email" HorizontalAlignment="Left" Margin="520,185,0,0" VerticalAlignment="Top" Height="24" Width="40"/>
+        <Label Content="Тел. Номер" HorizontalAlignment="Left" Margin="520,215,0,0" VerticalAlignment="Top" Height="25" Width="75"/>
+        <Label Content="Пароль" HorizontalAlignment="Left" Margin="520,244,0,0" VerticalAlignment="Top" Height="25" Width="55"/>
+        <Button Content="Зарегистрироваться" HorizontalAlignment="Center" Margin="0,299,0,0" VerticalAlignment="Top" Width="120" Background="#FFD1EEFC" Click="RegButton_Click"/>
         <Label Content="Ecotravel" HorizontalAlignment="Left" Margin="360,9,0,0" VerticalAlignment="Top" FontSize="18" FontWeight="Bold" Width="87" RenderTransformOrigin="0.5,0.5">
             <Label.RenderTransform>
                 <TransformGroup>

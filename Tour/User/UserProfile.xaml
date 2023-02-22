@@ -10,21 +10,21 @@
         <Rectangle HorizontalAlignment="Center" Height="49" Stroke="#FFB5D5CA" VerticalAlignment="Top" Width="800" Fill="#FFB5D5CA"/>
         <Button Content="Назад" HorizontalAlignment="Left" Margin="735,15,0,0" VerticalAlignment="Top" BorderBrush="#FFB5D5CA" Background="#FFB5D5CA" Click="BackButton_Click"/>
         <Rectangle HorizontalAlignment="Center" Height="35" Stroke="#FFE0A9AF" VerticalAlignment="Top" Width="800" Fill="#FFE0A9AF" Margin="0,49,0,0"/>
-        <Label Content="Профиль пользователя" HorizontalAlignment="Center" Margin="0,54,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
-        <TextBlock x:Name="Surn" HorizontalAlignment="Left" Margin="160,152,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="16" Width="116"/>
-        <Label Content="Фамилия:" HorizontalAlignment="Left" Margin="90,147,0,0" VerticalAlignment="Top" Width="65" FontWeight="Bold"/>
-        <TextBlock x:Name="Name" HorizontalAlignment="Left" Margin="131,183,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="16" Width="122"/>
+        <Label x:Name="Who" Content="Профиль пользователя" HorizontalAlignment="Center" Margin="0,54,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <TextBlock x:Name="Surn" HorizontalAlignment="Left" Margin="164,152,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="16" Width="181"/>
+        <Label Content="Фамилия:" HorizontalAlignment="Left" Margin="90,147,0,0" VerticalAlignment="Top" Width="69" FontWeight="Bold"/>
+        <TextBlock x:Name="Name" HorizontalAlignment="Left" Margin="134,183,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="16" Width="173"/>
         <Label Content="Имя:" HorizontalAlignment="Left" Margin="90,178,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
-        <TextBlock x:Name="Otch" HorizontalAlignment="Left" Margin="157,214,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="16" Width="131"/>
+        <TextBlock x:Name="Otch" HorizontalAlignment="Left" Margin="162,214,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="16" Width="188"/>
         <Label Content="Отчество:" HorizontalAlignment="Left" Margin="90,209,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
-        <TextBlock x:Name="Passport" HorizontalAlignment="Left" Margin="220,242,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="16" Width="158"/>
+        <TextBlock x:Name="Passport" HorizontalAlignment="Left" Margin="229,242,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="16" Width="171"/>
         <Label Content="Паспортные данные:" HorizontalAlignment="Left" Margin="90,237,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
-        <TextBlock x:Name="Visa" HorizontalAlignment="Left" Margin="136,273,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="16" Width="155"/>
+        <TextBlock x:Name="Visa" HorizontalAlignment="Left" Margin="136,273,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="16" Width="178"/>
         <Label Content="Виза:" HorizontalAlignment="Left" Margin="90,268,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.554,0.271" FontWeight="Bold"/>
-        <TextBlock x:Name="Email" HorizontalAlignment="Left" Margin="136,335,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="16" Width="121"/>
+        <TextBlock x:Name="Email" HorizontalAlignment="Left" Margin="139,335,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="16" Width="146"/>
         <Label Content="Email:" HorizontalAlignment="Left" Margin="90,330,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
-        <TextBlock x:Name="Number" HorizontalAlignment="Left" Margin="203,304,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="16" Width="155"/>
-        <Label Content="Номер телефона:" HorizontalAlignment="Left" Margin="90,299,0,0" VerticalAlignment="Top" Width="108" FontWeight="Bold"/>
+        <TextBlock x:Name="Number" HorizontalAlignment="Left" Margin="208,304,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="16" Width="172"/>
+        <Label Content="Номер телефона:" HorizontalAlignment="Left" Margin="90,299,0,0" VerticalAlignment="Top" Width="113" FontWeight="Bold"/>
         <Button Content="Редактировать информацию" HorizontalAlignment="Left" Margin="538,270,0,0" VerticalAlignment="Top" Height="30" Background="#FFD1EEFC" Width="182" Click="UpdateInfo_Click"/>
         <Button Content="Перейти в каталог туров" BorderBrush="#FF707070" Background="#FFFFFCD6" HorizontalAlignment="Left" Margin="536,186,0,0" VerticalAlignment="Top" Click="OpenCatalog_Click" Height="30" Width="184"/>
         <Button Content="Мои заявки" HorizontalAlignment="Left" Margin="536,228,0,0" VerticalAlignment="Top" Height="30" Background="#FFD1EEFC" Width="184" Click="CheckTickets_Click"/>

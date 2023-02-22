@@ -1,19 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
 using System.Text.RegularExpressions;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 using Tour.Classes;
 
 namespace Tour.Authentification
@@ -73,13 +62,22 @@ namespace Tour.Authentification
                 Match MV = R.Match(Visa.Text);
                 Match ME = R.Match(Email.Text);
                 Match MNu = R.Match(Number.Text);
-                Match MPs = R.Match(Pass.Password);                
+                Match MPs = R.Match(Pass.Password);
+                
+                if (Surname.Text == "" || Name.Text == "" || Otch.Text == ""
+                    || Email.Text == "" || Passport.Text == "" ||
+                    Number.Text == "" || Pass.Password == "" ||
+                    Visa.Text == "")
+                {
+                    MessageBox.Show("Поля не могут быть пустыми!");
+                    return;
+                }
 
                 for (int i = 0; i < Surname.Text.Length; i++)
                 {                    
                     if (MS.Success)
                     {
-                        MessageBox.Show("Поле Фамилия не может быть пустым!");
+                        MessageBox.Show("Поле Фамилия не может содержать пробелы!");
                         return;
                     }
                 }
@@ -88,7 +86,7 @@ namespace Tour.Authentification
                 {
                     if (MN.Success)
                     {
-                        MessageBox.Show("Поле Имя не может быть пустым!");
+                        MessageBox.Show("Поле Имя не может содержать пробелы!");
                         return; 
                     }
                 }
@@ -97,7 +95,7 @@ namespace Tour.Authentification
                 {
                     if (MO.Success)
                     {
-                        MessageBox.Show("Поле Отчество не может быть пустым!");
+                        MessageBox.Show("Поле Отчество не может содержать пробелы!");
                         return;
                     }
                 }
@@ -106,7 +104,7 @@ namespace Tour.Authentification
                 {
                     if (MP.Success)
                     {
-                        MessageBox.Show("Поле Паспортные данные не может быть пустым!");
+                        MessageBox.Show("Поле Паспортные данные не может содержать пробелы!");
                         return; 
                     }
                 }
@@ -115,7 +113,7 @@ namespace Tour.Authentification
                 {
                     if (MV.Success)
                     {
-                        MessageBox.Show("Поле Виза не может быть пустым!");
+                        MessageBox.Show("Поле Виза не может содержать пробелы!");
                         return;
                     }
                 }
@@ -124,7 +122,7 @@ namespace Tour.Authentification
                 {
                     if (ME.Success || !MEe.Success)
                     {
-                        MessageBox.Show("Поле Email не может быть пустым и должно содержать @!");
+                        MessageBox.Show("Поле Email не может содержать пробелы и должно содержать @!");
                         return;
                     }
                 }
@@ -133,7 +131,7 @@ namespace Tour.Authentification
                 {
                     if (MNu.Success)
                     {
-                        MessageBox.Show("Поле Телефон не может быть пустым!");
+                        MessageBox.Show("Поле Телефон не может содержать пробелы!");
                         return;
                     }
                 }
@@ -142,7 +140,7 @@ namespace Tour.Authentification
                 {
                     if (MPs.Success)
                     {
-                        MessageBox.Show("Поле Пароль не может быть пустым!");
+                        MessageBox.Show("Поле Пароль не может содержать пробелы!");
                         return;
                     }
                 }
@@ -168,6 +166,11 @@ namespace Tour.Authentification
                     this.Hide();
                     LogIn log = new LogIn();
                     log.Show();
+                }
+                else
+                {
+                    MessageBox.Show("Вы не были зарегистрированы!");
+                    return;
                 }
 
                 db.CloseConnection();
