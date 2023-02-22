@@ -9,7 +9,10 @@
     <Grid>
         <Rectangle HorizontalAlignment="Center" Height="49" Stroke="#FFB5D5CA" VerticalAlignment="Top" Width="600" Fill="#FFB5D5CA"/>
         <Button Content="Назад" HorizontalAlignment="Left" Margin="540,15,0,0" VerticalAlignment="Top" BorderBrush="#FFB5D5CA" Background="#FFB5D5CA" Click="BackButton_Click"/>
-        <Label Content="Tour" HorizontalAlignment="Left" Margin="25,4,0,0" VerticalAlignment="Top" FontSize="18" FontWeight="Bold" Width="52" RenderTransformOrigin="0.5,0.5">
+        <Label Content="Мои заявки" HorizontalAlignment="Center" Margin="0,6,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="18"/>
+
+        <ListView x:Name="Tickets" Margin="0,49,0,0" BorderBrush="White"/>
+        <Label Content="Ecotravel" HorizontalAlignment="Left" Margin="25,9,0,0" VerticalAlignment="Top" FontSize="18" FontWeight="Bold" Width="87" RenderTransformOrigin="0.5,0.5">
             <Label.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -19,9 +22,6 @@
                 </TransformGroup>
             </Label.RenderTransform>
         </Label>
-        <Label Content="Мои заявки" HorizontalAlignment="Center" Margin="0,6,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="18"/>
-
-        <ListView x:Name="Tickets" Margin="0,49,0,0" BorderBrush="White"/>
 
     </Grid>
 </Window>

@@ -7,10 +7,10 @@
         mc:Ignorable="d"
         Title="Добавить город" Height="200" Width="400">
     <Grid>
-        <ComboBox x:Name="Country" HorizontalAlignment="Left" Margin="203,65,0,0" VerticalAlignment="Top" Width="119"/>
-        <TextBox x:Name="City" HorizontalAlignment="Left" Margin="78,65,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="22"/>
-        <Label Content="Город" HorizontalAlignment="Left" Margin="73,39,0,0" VerticalAlignment="Top"/>
-        <Label Content="Страна" HorizontalAlignment="Left" Margin="199,39,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="Country" HorizontalAlignment="Left" Margin="195,65,0,0" VerticalAlignment="Top" Width="119"/>
+        <TextBox x:Name="City" HorizontalAlignment="Left" Margin="70,65,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="22"/>
+        <Label Content="Город" HorizontalAlignment="Left" Margin="65,39,0,0" VerticalAlignment="Top"/>
+        <Label Content="Страна" HorizontalAlignment="Left" Margin="191,39,0,0" VerticalAlignment="Top"/>
         <Button Content="Добавить страну" HorizontalAlignment="Center" Margin="0,92,0,0" VerticalAlignment="Top" Height="30" Background="#FFD1EEFC" Width="244" Click="InsertCity_Click"/>
 
     </Grid>

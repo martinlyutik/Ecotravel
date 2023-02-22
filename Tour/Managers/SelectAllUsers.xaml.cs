@@ -24,7 +24,9 @@ namespace Tour.Managers
 
             DB db = new DB();
 
-            SqlCommand command = new SqlCommand("SELECT * FROM Users", db.GetConnection());
+            SqlCommand command = new SqlCommand("SELECT id, " +
+                "namme, surname, otch, passport, visa, " +
+                "email, number FROM Users", db.GetConnection());
 
             SqlDataAdapter adapter = new SqlDataAdapter();
 

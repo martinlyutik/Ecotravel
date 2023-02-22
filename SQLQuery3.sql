@@ -19,6 +19,8 @@ CREATE TABLE Country
 	visayn VARCHAR(50) NOT NULL
 )
 
+SELECT * FROM ticket
+
 INSERT INTO Country
 (namme, visayn)
 VALUES

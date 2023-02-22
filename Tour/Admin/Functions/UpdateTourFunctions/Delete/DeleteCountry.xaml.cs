@@ -54,7 +54,7 @@ namespace Tour.Admin.Functions.UpdateTourFunctions.Delete
             {
                 DB db = new DB();
 
-                SqlCommand command = new SqlCommand("DELETE FROM Country WHERE namme = " + Country.SelectedItem, db.GetConnection());
+                SqlCommand command = new SqlCommand("DELETE FROM Country WHERE id = (SELECT id FROM Country WHERE namme = '" + Country.SelectedItem  + "')", db.GetConnection());
 
                 db.OpenConnection();
 

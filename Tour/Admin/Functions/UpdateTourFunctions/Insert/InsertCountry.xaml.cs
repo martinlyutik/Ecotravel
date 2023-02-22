@@ -1,18 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
+﻿using System.Data.SqlClient;
 using System.Text.RegularExpressions;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 
 namespace Tour.Admin.Functions.UpdateTourFunctions.Insert
 {
@@ -56,7 +44,9 @@ namespace Tour.Admin.Functions.UpdateTourFunctions.Insert
 
                 DB db = new DB();
 
-                SqlCommand command = new SqlCommand("INSERT INTO Country (namme, visayn) VALUES ('" + Country.Text + "', '" + Visa.SelectedItem + "')", db.GetConnection());
+                SqlCommand command = new SqlCommand("INSERT INTO Country" +
+                    " (namme, visayn) VALUES ('" + Country.Text + "', '"
+                    + Visa.SelectedItem + "')", db.GetConnection());
 
                 db.OpenConnection();
 

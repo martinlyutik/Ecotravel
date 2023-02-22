@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="Оставить заявку" Height="450" Width="800">
     <Grid>
-        <ComboBox x:Name="City" HorizontalAlignment="Left" Margin="225,157,0,0" VerticalAlignment="Top" Width="120" BorderBrush="#FFFFFCD6">
+        <ComboBox x:Name="City" HorizontalAlignment="Left" Margin="260,152,0,0" VerticalAlignment="Top" Width="110" BorderBrush="#FFFFFCD6">
             <ComboBox.Background>
                 <LinearGradientBrush EndPoint="0,1">
                     <GradientStop Color="#FFF0F0F0"/>
@@ -28,8 +28,8 @@
             </Label.RenderTransform>
         </Label>
         <Label Content="Заявка" HorizontalAlignment="Center" Margin="0,6,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="18"/>
-        <Label Content="Город" HorizontalAlignment="Left" Margin="175,153,0,0" VerticalAlignment="Top" Width="45"/>
-        <ComboBox x:Name="VidRazm" HorizontalAlignment="Left" Margin="290,205,0,0" VerticalAlignment="Top" Width="110" BorderBrush="#FFFFFCD6">
+        <Label Content="Город" HorizontalAlignment="Left" Margin="145,150,0,0" VerticalAlignment="Top" Width="45"/>
+        <ComboBox x:Name="VidRazm" HorizontalAlignment="Left" Margin="260,183,0,0" VerticalAlignment="Top" Width="110" BorderBrush="#FFFFFCD6">
             <ComboBox.Background>
                 <LinearGradientBrush EndPoint="0,1">
                     <GradientStop Color="#FFF0F0F0"/>
@@ -37,8 +37,8 @@
                 </LinearGradientBrush>
             </ComboBox.Background>
         </ComboBox>
-        <Label Content="Вид размещения" HorizontalAlignment="Left" Margin="175,203,0,0" VerticalAlignment="Top" Width="110"/>
-        <ComboBox x:Name="VidTrans" HorizontalAlignment="Left" Margin="280,258,0,0" VerticalAlignment="Top" Width="120" BorderBrush="#FFFFFCD6">
+        <Label Content="Вид размещения" HorizontalAlignment="Left" Margin="145,181,0,0" VerticalAlignment="Top" Width="110"/>
+        <ComboBox x:Name="VidTrans" HorizontalAlignment="Left" Margin="260,215,0,0" VerticalAlignment="Top" Width="110" BorderBrush="#FFFFFCD6">
             <ComboBox.Background>
                 <LinearGradientBrush EndPoint="0,1">
                     <GradientStop Color="#FFF0F0F0"/>
@@ -46,8 +46,8 @@
                 </LinearGradientBrush>
             </ComboBox.Background>
         </ComboBox>
-        <Label Content="Вид транспорта" HorizontalAlignment="Left" Margin="175,256,0,0" VerticalAlignment="Top" Width="100"/>
-        <ComboBox x:Name="Typpe" HorizontalAlignment="Left" Margin="255,305,0,0" VerticalAlignment="Top" Width="145" BorderBrush="#FFFFFCD6">
+        <Label Content="Вид транспорта" HorizontalAlignment="Left" Margin="145,213,0,0" VerticalAlignment="Top" Width="100"/>
+        <ComboBox x:Name="Typpe" HorizontalAlignment="Left" Margin="260,246,0,0" VerticalAlignment="Top" Width="110" BorderBrush="#FFFFFCD6">
             <ComboBox.Background>
                 <LinearGradientBrush EndPoint="0,1">
                     <GradientStop Color="#FFF0F0F0"/>
@@ -55,14 +55,14 @@
                 </LinearGradientBrush>
             </ComboBox.Background>
         </ComboBox>
-        <Label Content="Тип отдыха" HorizontalAlignment="Left" Margin="175,303,0,0" VerticalAlignment="Top" Width="75"/>
-        <DatePicker x:Name="DateStart" HorizontalAlignment="Left" Margin="553,155,0,0" VerticalAlignment="Top" Height="24" Width="107"/>
-        <Label Content="Дата начала поездки" HorizontalAlignment="Left" Margin="423,154,0,0" VerticalAlignment="Top" Width="125" Height="26"/>
-        <ComboBox x:Name="KolvoDney" HorizontalAlignment="Left" Margin="538,187,0,0" VerticalAlignment="Top" Width="55" Height="22"/>
-        <Label Content="Количество дней:" HorizontalAlignment="Left" Margin="423,185,0,0" VerticalAlignment="Top" Width="110" Height="26"/>
-        <Label Content="Количество путевок:" HorizontalAlignment="Left" Margin="423,217,0,0" VerticalAlignment="Top" Width="125" Height="26"/>
-        <TextBox x:Name="KolvoPutevok" HorizontalAlignment="Left" Margin="553,221,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="40" Height="18"/>
-        <Button Content="Отправить заявку" HorizontalAlignment="Left" Margin="478,303,0,0" VerticalAlignment="Top" Height="24" Background="#FFD1EEFC" Width="163" Click="SaveTicket_Click"/>
+        <Label Content="Тип отдыха" HorizontalAlignment="Left" Margin="145,244,0,0" VerticalAlignment="Top" Width="75"/>
+        <DatePicker x:Name="DateStart" HorizontalAlignment="Left" Margin="533,150,0,0" VerticalAlignment="Top" Height="25" Width="107"/>
+        <Label Content="Дата начала поездки" HorizontalAlignment="Left" Margin="403,150,0,0" VerticalAlignment="Top" Width="125" Height="26"/>
+        <ComboBox x:Name="KolvoDney" HorizontalAlignment="Left" Margin="533,185,0,0" VerticalAlignment="Top" Width="107" Height="22"/>
+        <Label Content="Количество дней:" HorizontalAlignment="Left" Margin="403,181,0,0" VerticalAlignment="Top" Width="110" Height="26"/>
+        <Label Content="Количество путевок:" HorizontalAlignment="Left" Margin="403,213,0,0" VerticalAlignment="Top" Width="125" Height="26"/>
+        <TextBox x:Name="KolvoPutevok" HorizontalAlignment="Left" Margin="533,217,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="107" Height="22"/>
+        <Button Content="Отправить заявку" HorizontalAlignment="Center" Margin="0,310,0,0" VerticalAlignment="Top" Height="24" Background="#FFD1EEFC" Width="118" Click="SaveTicket_Click"/>
 
     </Grid>
 </Window>

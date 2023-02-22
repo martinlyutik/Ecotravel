@@ -41,7 +41,8 @@ namespace Tour.Admin.Functions
 
         private void CreateCity_Click(object sender, RoutedEventArgs e)
         {
-
+            UpdateTourFunctions.Insert.InsertCity cit = new UpdateTourFunctions.Insert.InsertCity();
+            cit.Show();
         }
 
         private void DeleteTypeVac_Click(object sender, RoutedEventArgs e)
@@ -52,7 +53,8 @@ namespace Tour.Admin.Functions
 
         private void CreateTypeVac_Click(object sender, RoutedEventArgs e)
         {
-
+            UpdateTourFunctions.Insert.InsertTypeVac vac = new UpdateTourFunctions.Insert.InsertTypeVac();
+            vac.Show();
         }
 
         private void DeleteVidTransp_Click(object sender, RoutedEventArgs e)
@@ -63,7 +65,8 @@ namespace Tour.Admin.Functions
 
         private void CreateVidTransp_Click(object sender, RoutedEventArgs e)
         {
-
+            UpdateTourFunctions.Insert.InsertVidTransp vid = new UpdateTourFunctions.Insert.InsertVidTransp();
+            vid.Show();
         }
 
         private void DeleteVidRazm_Click(object sender, RoutedEventArgs e)
@@ -74,7 +77,8 @@ namespace Tour.Admin.Functions
 
         private void CreateVidRazm_Click(object sender, RoutedEventArgs e)
         {
-
+            UpdateTourFunctions.Insert.InsertVidRazmesch raz = new UpdateTourFunctions.Insert.InsertVidRazmesch();
+            raz.Show();
         }
 
         private void BackButton_Click(object sender, RoutedEventArgs e)

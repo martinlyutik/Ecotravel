@@ -1,17 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
-using System.Data;
+﻿using System.Windows;
 using System.Data.SqlClient;
 using System.Text.RegularExpressions;
 
@@ -25,7 +12,7 @@ namespace Tour.Admin.Functions.UpdateTourFunctions.Insert
 
             DB db = new DB();
 
-            SqlCommand command = new SqlCommand("SELECT * FROM Country", db.GetConnection());
+            SqlCommand command = new SqlCommand("SELECT namme FROM Country", db.GetConnection());
 
             db.OpenConnection();
 
@@ -65,7 +52,7 @@ namespace Tour.Admin.Functions.UpdateTourFunctions.Insert
                 {
                     if (MC.Success)
                     {
-                        MessageBox.Show("Поле не может быть пустым!");
+                        MessageBox.Show("Поле не может содержать пробелы!");
                         return;
                     }
                 }

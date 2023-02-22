@@ -9,16 +9,6 @@
     <Grid>
         <Rectangle HorizontalAlignment="Center" Height="49" Stroke="#FFB5D5CA" VerticalAlignment="Top" Width="800" Fill="#FFB5D5CA"/>
         <Button Content="Назад" HorizontalAlignment="Left" Margin="735,15,0,0" VerticalAlignment="Top" BorderBrush="#FFB5D5CA" Background="#FFB5D5CA" Click="BackButton_Click"/>
-        <Label Content="Tour" HorizontalAlignment="Left" Margin="380,9,0,0" VerticalAlignment="Top" FontSize="18" FontWeight="Bold" Width="52" RenderTransformOrigin="0.5,0.5">
-            <Label.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform AngleY="0.252"/>
-                    <RotateTransform/>
-                    <TranslateTransform Y="0.396"/>
-                </TransformGroup>
-            </Label.RenderTransform>
-        </Label>
         <TextBox MaxLength="50" x:Name="Surname" HorizontalAlignment="Left" Margin="165,210,0,0" TextWrapping="Wrap" Text="Фамилия" VerticalAlignment="Top" Width="120"/>
         <TextBox MaxLength="50" x:Name="Otch" HorizontalAlignment="Left" Margin="165,316,0,0" TextWrapping="Wrap" Text="Отчество" VerticalAlignment="Top" Width="120"/>
         <TextBox MaxLength="50" x:Name="Passport" HorizontalAlignment="Center" Margin="0,210,0,0" TextWrapping="Wrap" Text="Паспортные данные" VerticalAlignment="Top" Width="120"/>
@@ -38,6 +28,16 @@
         <Label Content="Введите Тел. Номер:" HorizontalAlignment="Left" Margin="520,180,0,0" VerticalAlignment="Top" Height="25" Width="130"/>
         <Label Content="Введите пароль:" HorizontalAlignment="Left" Margin="520,233,0,0" VerticalAlignment="Top" Height="25" Width="120"/>
         <Button Content="Зарегистрироваться" HorizontalAlignment="Left" Margin="520,314,0,0" VerticalAlignment="Top" Width="120" Background="#FFD1EEFC" Click="RegButton_Click"/>
+        <Label Content="Ecotravel" HorizontalAlignment="Left" Margin="360,9,0,0" VerticalAlignment="Top" FontSize="18" FontWeight="Bold" Width="87" RenderTransformOrigin="0.5,0.5">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleY="0.252"/>
+                    <RotateTransform/>
+                    <TranslateTransform Y="0.396"/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
 
     </Grid>
 </Window>

@@ -28,7 +28,10 @@
         <Button Content="Вывести список менеджеров" HorizontalAlignment="Left" Margin="37,134,0,0" VerticalAlignment="Top" Height="30" Background="#FFD1EEFC" Width="183" Click="SelectMng_Click"/>
         <Rectangle HorizontalAlignment="Center" Height="49" Stroke="#FFB5D5CA" VerticalAlignment="Top" Width="800" Fill="#FFB5D5CA"/>
         <Button Content="Назад" HorizontalAlignment="Left" Margin="735,15,0,0" VerticalAlignment="Top" BorderBrush="#FFB5D5CA" Background="#FFB5D5CA" Click="BackButton_Click"/>
-        <Label Content="Tour" HorizontalAlignment="Left" Margin="25,9,0,0" VerticalAlignment="Top" FontSize="18" FontWeight="Bold" Width="52" RenderTransformOrigin="0.5,0.5">
+        <Rectangle HorizontalAlignment="Center" Height="35" Stroke="#FFE0A9AF" VerticalAlignment="Top" Width="800" Fill="#FFE0A9AF" Margin="0,49,0,0"/>
+        <Label Content="Профиль администратора" HorizontalAlignment="Center" Margin="0,54,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <Button Content="Удалить менеджера" HorizontalAlignment="Left" Margin="37,169,0,0" VerticalAlignment="Top" Height="30" Background="#FFD1EEFC" Width="183" Click="DeleteMng_Click"/>
+        <Label Content="Ecotravel" HorizontalAlignment="Left" Margin="25,9,0,0" VerticalAlignment="Top" FontSize="18" FontWeight="Bold" Width="87" RenderTransformOrigin="0.5,0.5">
             <Label.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -38,8 +41,5 @@
                 </TransformGroup>
             </Label.RenderTransform>
         </Label>
-        <Rectangle HorizontalAlignment="Center" Height="35" Stroke="#FFE0A9AF" VerticalAlignment="Top" Width="800" Fill="#FFE0A9AF" Margin="0,49,0,0"/>
-        <Label Content="Профиль администратора" HorizontalAlignment="Center" Margin="0,54,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
-        <Button Content="Удалить менеджера" HorizontalAlignment="Left" Margin="37,169,0,0" VerticalAlignment="Top" Height="30" Background="#FFD1EEFC" Width="183" Click="DeleteMng_Click"/>
     </Grid>
 </Window>

@@ -93,11 +93,11 @@ namespace Tour.Main
                 if (City.SelectedItem == null || VidRazm.SelectedItem == null
                     || VidTrans.SelectedItem == null 
                     || Typpe.SelectedItem == null 
-                    || KolvoDney.SelectedItem == null || DateStart == null)
+                    || KolvoDney.SelectedItem == null || DateStart.Text == "")
                 {
                     MessageBox.Show("Выберите параметры!");
                     return;
-                }
+                }                
 
                 Regex R = new Regex("\\s+");
                 Match MK = R.Match(KolvoPutevok.Text);
@@ -109,13 +109,16 @@ namespace Tour.Main
                         MessageBox.Show("Поле не может содержать пробелы!");
                         return;
                     }
+                }
 
-                    if (Convert.ToInt32(KolvoPutevok.Text[i]) < 0)
-                    {
-                        MessageBox.Show("Количесвто путевок не может быть отрицательным!");
-                        return;
-                    }
+                if (KolvoPutevok.Text == "")
+                {
+                    MessageBox.Show("Поле не может быть пустым!");
+                    return;
+                }
 
+                for (int i = 0; i < KolvoPutevok.Text.Length; i++)
+                {
                     if (KolvoPutevok.Text[i] >= 'А' && KolvoPutevok.Text[i] <= 'Я')
                     {
                         MessageBox.Show("Введите цифры!");
@@ -137,6 +140,12 @@ namespace Tour.Main
                     if (KolvoPutevok.Text[i] >= 'a' && KolvoPutevok.Text[i] <= 'z')
                     {
                         MessageBox.Show("Введите цифры!");
+                        return;
+                    }
+
+                    if (Convert.ToInt32(KolvoPutevok.Text) <= 0)
+                    {
+                        MessageBox.Show("Количесвто путевок не может быть отрицательным!");
                         return;
                     }
                 }

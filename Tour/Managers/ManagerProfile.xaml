@@ -9,7 +9,19 @@
     <Grid>
         <Rectangle HorizontalAlignment="Center" Height="49" Stroke="#FFB5D5CA" VerticalAlignment="Top" Width="800" Fill="#FFB5D5CA"/>
         <Button Content="Назад" HorizontalAlignment="Left" Margin="735,15,0,0" VerticalAlignment="Top" BorderBrush="#FFB5D5CA" Background="#FFB5D5CA" Click="BackButton_Click"/>
-        <Label Content="Tour" HorizontalAlignment="Left" Margin="25,9,0,0" VerticalAlignment="Top" FontSize="18" FontWeight="Bold" Width="52" RenderTransformOrigin="0.5,0.5">
+        <Rectangle HorizontalAlignment="Center" Height="35" Stroke="#FFE0A9AF" VerticalAlignment="Top" Width="800" Fill="#FFE0A9AF" Margin="0,49,0,0"/>
+        <Label Content="Профиль менеджера" HorizontalAlignment="Center" Margin="0,54,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <TextBlock x:Name="FIO" HorizontalAlignment="Left" Margin="142,174,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="18" Width="243"/>
+        <Label Content="ФИО:" HorizontalAlignment="Left" Margin="95,170,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <TextBlock x:Name="Login" HorizontalAlignment="Left" Margin="149,206,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="16" Width="148"/>
+        <Label Content="Логин:" HorizontalAlignment="Left" Margin="95,201,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <TextBlock x:Name="Email" HorizontalAlignment="Left" Margin="143,268,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="16" Width="121"/>
+        <Label Content="Email:" HorizontalAlignment="Left" Margin="94,263,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <TextBlock x:Name="Number" HorizontalAlignment="Left" Margin="212,237,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="16" Width="117"/>
+        <Label Content="Номер телефона:" HorizontalAlignment="Left" Margin="95,232,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <Button Content="Вывести список пользователей" HorizontalAlignment="Left" Margin="476,192,0,0" VerticalAlignment="Top" Height="30" Background="#FFD1EEFC" Width="184" Click="SelectAllUsers_Click"/>
+        <Button Content="Работа над заявками" HorizontalAlignment="Left" Margin="476,237,0,0" VerticalAlignment="Top" Height="30" Background="#FFD1EEFC" Width="184" Click="WorkOnTickets_Click"/>
+        <Label Content="Ecotravel" HorizontalAlignment="Left" Margin="25,9,0,0" VerticalAlignment="Top" FontSize="18" FontWeight="Bold" Width="87" RenderTransformOrigin="0.5,0.5">
             <Label.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -19,18 +31,6 @@
                 </TransformGroup>
             </Label.RenderTransform>
         </Label>
-        <Rectangle HorizontalAlignment="Center" Height="35" Stroke="#FFE0A9AF" VerticalAlignment="Top" Width="800" Fill="#FFE0A9AF" Margin="0,49,0,0"/>
-        <Label Content="Профиль менеджера" HorizontalAlignment="Center" Margin="0,54,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
-        <TextBlock x:Name="FIO" HorizontalAlignment="Left" Margin="132,144,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="21" Width="211"/>
-        <Label Content="ФИО:" HorizontalAlignment="Left" Margin="65,139,0,0" VerticalAlignment="Top"/>
-        <TextBlock x:Name="Login" HorizontalAlignment="Left" Margin="125,175,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="16" Width="148"/>
-        <Label Content="Логин:" HorizontalAlignment="Left" Margin="65,170,0,0" VerticalAlignment="Top"/>
-        <TextBlock x:Name="Email" HorizontalAlignment="Left" Margin="131,240,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="16" Width="121"/>
-        <Label Content="Email:" HorizontalAlignment="Left" Margin="64,235,0,0" VerticalAlignment="Top"/>
-        <TextBlock x:Name="Number" HorizontalAlignment="Left" Margin="185,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Height="16" Width="117"/>
-        <Label Content="Номер телефона:" HorizontalAlignment="Left" Margin="65,0,0,0" VerticalAlignment="Center"/>
-        <Button Content="Вывести список пользователей" HorizontalAlignment="Left" Margin="466,144,0,0" VerticalAlignment="Top" Height="30" Background="#FFD1EEFC" Width="184" Click="SelectAllUsers_Click"/>
-        <Button Content="Работа над заявками" HorizontalAlignment="Left" Margin="466,189,0,0" VerticalAlignment="Top" Height="30" Background="#FFD1EEFC" Width="184" Click="WorkOnTickets_Click"/>
 
     </Grid>
 </Window>

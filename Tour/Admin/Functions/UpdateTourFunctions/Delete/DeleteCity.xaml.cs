@@ -53,7 +53,7 @@ namespace Tour.Admin.Functions.UpdateTourFunctions.Delete
             {
                 DB db = new DB();
 
-                SqlCommand command = new SqlCommand("DELETE FROM City WHERE namme = " + City.SelectedItem, db.GetConnection());
+                SqlCommand command = new SqlCommand("DELETE FROM City WHERE id = (SELECT id FROM City WHERE namme = '" + City.SelectedItem + "')", db.GetConnection());
 
                 db.OpenConnection();
 

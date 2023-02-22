@@ -9,7 +9,7 @@ namespace Tour
 {
     internal class DB
     {
-        SqlConnection connection = new SqlConnection("Server=localhost;Database=Tour;Trusted_Connection=True;");
+        SqlConnection connection = new SqlConnection("Server=localhost;Database=Ecotravel;Trusted_Connection=True;");
 
         public SqlConnection GetConnection()
         {

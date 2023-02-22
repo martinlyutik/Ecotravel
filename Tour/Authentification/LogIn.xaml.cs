@@ -1,19 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 using Tour.Classes;
 
 namespace Tour.Authentification
@@ -35,9 +23,15 @@ namespace Tour.Authentification
 
                 SqlDataAdapter adapter = new SqlDataAdapter();
 
-                SqlCommand command = new SqlCommand("SELECT * FROM Users WHERE number = '" + Number.Text + "' AND passwrd = '" + Md5.HashPassword(Pass.Password) + "'", db.GetConnection());
+                SqlCommand command = new SqlCommand("SELECT * FROM Users" +
+                    " WHERE number = '" + Number.Text + "' AND passwrd = '" 
+                    + Md5.HashPassword(Pass.Password) + "'", 
+                    db.GetConnection());
 
-                SqlCommand cmd = new SqlCommand("SELECT * FROM Managers WHERE loginn = '" + Number.Text + "' AND passwrd = '" + Md5.HashPassword(Pass.Password) + "'", db.GetConnection());
+                SqlCommand cmd = new SqlCommand("SELECT * FROM Managers" +
+                    " WHERE loginn = '" + Number.Text + "' AND passwrd = '"
+                    + Md5.HashPassword(Pass.Password) + "'",
+                    db.GetConnection());
 
                 DataTable tbl = new DataTable();
 
@@ -63,7 +57,8 @@ namespace Tour.Authentification
                                 Admin.Admin admin = new Admin.Admin();
                                 admin.Show();
                             }
-                            else if (Number.Text.Contains("mng") && Pass.Password.Contains("mng"))
+                            else if (Number.Text.Contains("mng") && 
+                                Pass.Password.Contains("mng"))
                             {
                                 Manager manager = new Manager
                                 {
@@ -126,6 +121,11 @@ namespace Tour.Authentification
             this.Hide();
             Authentification.SignUp up = new Authentification.SignUp();
             up.Show();
+        }
+
+        private void Number_TextChanged_1(object sender, System.Windows.Controls.TextChangedEventArgs e)
+        {
+            Number.Clear();
         }
     }
 }

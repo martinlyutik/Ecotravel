@@ -91,6 +91,15 @@
     <Compile Include="Admin\Functions\UpdateTourFunctions\Insert\InsertCountry.xaml.cs">
       <DependentUpon>InsertCountry.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Admin\Functions\UpdateTourFunctions\Insert\InsertTypeVac.xaml.cs">
+      <DependentUpon>InsertTypeVac.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Functions\UpdateTourFunctions\Insert\InsertVidRazmesch.xaml.cs">
+      <DependentUpon>InsertVidRazmesch.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Functions\UpdateTourFunctions\Insert\InsertVidTransp.xaml.cs">
+      <DependentUpon>InsertVidTransp.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Admin\Functions\UpdateTours.xaml.cs">
       <DependentUpon>UpdateTours.xaml</DependentUpon>
     </Compile>
@@ -180,6 +189,18 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Admin\Functions\UpdateTourFunctions\Insert\InsertCountry.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Admin\Functions\UpdateTourFunctions\Insert\InsertTypeVac.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Admin\Functions\UpdateTourFunctions\Insert\InsertVidRazmesch.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Admin\Functions\UpdateTourFunctions\Insert\InsertVidTransp.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

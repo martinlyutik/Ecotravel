@@ -9,16 +9,6 @@
     <Grid>
         <Rectangle HorizontalAlignment="Center" Height="49" Stroke="#FFB5D5CA" VerticalAlignment="Top" Width="800" Fill="#FFB5D5CA"/>
         <Button Content="Назад" HorizontalAlignment="Left" Margin="735,15,0,0" VerticalAlignment="Top" BorderBrush="#FFB5D5CA" Background="#FFB5D5CA" Click="BackButton_Click"/>
-        <Label Content="Tour" HorizontalAlignment="Left" Margin="25,9,0,0" VerticalAlignment="Top" FontSize="18" FontWeight="Bold" Width="52" RenderTransformOrigin="0.5,0.5">
-            <Label.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform AngleY="0.252"/>
-                    <RotateTransform/>
-                    <TranslateTransform Y="0.396"/>
-                </TransformGroup>
-            </Label.RenderTransform>
-        </Label>
         <Rectangle HorizontalAlignment="Center" Height="35" Stroke="#FFE0A9AF" VerticalAlignment="Top" Width="800" Fill="#FFE0A9AF" Margin="0,49,0,0"/>
         <Label Content="Профиль администратора" HorizontalAlignment="Center" Margin="0,54,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
         <ListView x:Name="OutputDb" Margin="286,136,50,55" ToolTip="База данных">
@@ -51,5 +41,15 @@
         <Button Content="Вывести список менеджеров" HorizontalAlignment="Left" Margin="35,241,0,0" VerticalAlignment="Top" Height="30" Background="#FFD1EEFC" Width="183" Click="SelectMng_Click"/>
         <Button Content="Удалить пользователя" HorizontalAlignment="Left" Margin="35,206,0,0" VerticalAlignment="Top" Height="30" Background="#FFD1EEFC" Width="183" Click="DeleteUser_Click"/>
         <Button Content="Редактировать туры" HorizontalAlignment="Left" Margin="35,313,0,0" VerticalAlignment="Top" Height="30" Background="#FFD1EEFC" Width="183" Click="UpdtTours_Click"/>
+        <Label Content="Ecotravel" HorizontalAlignment="Left" Margin="25,9,0,0" VerticalAlignment="Top" FontSize="18" FontWeight="Bold" Width="87" RenderTransformOrigin="0.5,0.5">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleY="0.252"/>
+                    <RotateTransform/>
+                    <TranslateTransform Y="0.396"/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
     </Grid>
 </Window>
