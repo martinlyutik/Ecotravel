@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespacыe:Tour.Main"
         mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
         Title="Оставить заявку" Height="460" Width="814">
     <Grid Background="#FFF5F5F7">
         <Rectangle RadiusX="10" RadiusY="10" HorizontalAlignment="Left" Height="216" Margin="103,146,0,0" VerticalAlignment="Top" Width="594" Fill="White" ScrollViewer.VerticalScrollBarVisibility="Disabled">

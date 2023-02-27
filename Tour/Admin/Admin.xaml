@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Tour.Admin"
         mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
         Title="Профиль администратора" Height="460" Width="814">
     <Grid Background="#FFF5F5F7">
         <Rectangle HorizontalAlignment="Center" Height="49" VerticalAlignment="Top" Width="814">

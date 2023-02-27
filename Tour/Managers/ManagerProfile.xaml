@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Tour.Managers"
         mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
         Title="Профиль менееджера" Height="460" Width="814">
     <Grid Background="#FFF5F5F7">
         <Rectangle RadiusX="10" RadiusY="10" HorizontalAlignment="Left" Height="157" Margin="81,137,0,0" VerticalAlignment="Top" Width="393" Fill="White" ScrollViewer.VerticalScrollBarVisibility="Disabled">

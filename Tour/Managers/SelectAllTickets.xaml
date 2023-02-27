@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Tour.Managers"
         mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
         Title="Заявки" Height="460" Width="814">
     <Grid Background="#FFF5F5F7">
         <Rectangle HorizontalAlignment="Center" Height="49" VerticalAlignment="Top" Width="814">
@@ -25,8 +26,8 @@
         </Rectangle>
         <Button Content="Назад" HorizontalAlignment="Left" Margin="728,14,0,0" VerticalAlignment="Top" BorderBrush="#FF3DA35D" Background="White" Click="BackButton_Click" FontWeight="Medium" FontStretch="SemiCondensed" Foreground="#FF3DA35D" Height="27" Width="55"/>
         <ListView x:Name="Tickets" Margin="0,49,0,114" Background="#FFF5F5F7" BorderBrush="White"/>
-        <Button Content="Удалить заявку" HorizontalAlignment="Left" Margin="250,354,0,0" VerticalAlignment="Top" Height="30" Background="#FF08D27B" Foreground="#FFF5F5F7" FontWeight="Medium" Width="120" Click="DeleteTicket_Click"/>
-        <Button Content="Изменить статус" HorizontalAlignment="Left" Margin="390,354,0,0" VerticalAlignment="Top" Height="30" Background="#FF08D27B" Foreground="#FFF5F5F7" FontWeight="Medium" Width="120" Click="UpdateTicketStatus_Click"/>
+        <Button Content="Удалить заявку" HorizontalAlignment="Left" Margin="280,354,0,0" VerticalAlignment="Top" Height="30" Background="#FF08D27B" Foreground="#FFF5F5F7" FontWeight="Medium" Width="120" Click="DeleteTicket_Click"/>
+        <Button Content="Изменить статус" HorizontalAlignment="Left" Margin="420,354,0,0" VerticalAlignment="Top" Height="30" Background="#FF08D27B" Foreground="#FFF5F5F7" FontWeight="Medium" Width="120" Click="UpdateTicketStatus_Click"/>
         <Label Content="Ecotravel" HorizontalAlignment="Left" Margin="25,4,0,0" VerticalAlignment="Top" FontSize="24" FontWeight="Bold" Width="117" RenderTransformOrigin="0.5,0.5" Foreground="White">
             <Label.RenderTransform>
                 <TransformGroup>

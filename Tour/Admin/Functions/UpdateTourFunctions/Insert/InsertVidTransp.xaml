@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Tour.Admin.Functions.UpdateTourFunctions.Insert"
         mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
         Title="Добавить вид транспорта" Height="200" Width="400">
     <Grid Background="#FFF5F5F7">
         <TextBox x:Name="Vid" HorizontalAlignment="Left" Margin="178,50,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="130" Height="30"/>

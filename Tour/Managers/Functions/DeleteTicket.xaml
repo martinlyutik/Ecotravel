@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Tour.Managers.Functions"
         mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
         Title="Удалить заявку" Height="210" Width="414">
     <Grid Background="#FFF5F5F7">
         <Button Content="Удалить" HorizontalAlignment="Left" Margin="192,69,0,0" VerticalAlignment="Top" Height="30" Background="#FF08D27B" Foreground="#FFF5F5F7" FontWeight="Medium" Width="120" Click="DeleteTicket_Click"/>

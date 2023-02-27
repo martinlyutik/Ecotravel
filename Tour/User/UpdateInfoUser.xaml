@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Tour.User"
         mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
         Title="Редактировать информацию" Height="450" Width="800">
     <Grid Background="#FFF5F5F7">
         <Rectangle HorizontalAlignment="Center" Height="49" VerticalAlignment="Top" Width="814">

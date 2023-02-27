@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Tour.User"
         mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
         Title="Мои заявки" Height="300" Width="600">
     <Grid Background="#FFF5F5F7">
         <Rectangle HorizontalAlignment="Center" Height="49" VerticalAlignment="Top" Width="600">

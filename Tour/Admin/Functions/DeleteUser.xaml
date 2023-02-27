@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Tour.Admin.Functions"
         mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
         Title="Удалить пользователя" Height="210" Width="414">
     <Grid>
         <Button Content="Удалить" HorizontalAlignment="Left" Margin="193,0,0,0" VerticalAlignment="Center" Height="30" Background="#FF08D27B" Foreground="#FFF5F5F7" FontWeight="Medium" BorderBrush="#FFF5F5F7" Width="120" Click="DeleteUser_Click"/>

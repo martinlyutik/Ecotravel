@@ -5,6 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Tour.Main"
         mc:Ignorable="d"
+        ResizeMode="CanMinimize"
+        WindowStartupLocation="CenterScreen"
         Title="Каталог" Height="460" Width="814">
     <Grid Background="#FFF5F5F7">
         <Rectangle HorizontalAlignment="Center" Height="49" VerticalAlignment="Top" Width="814">
@@ -43,12 +45,12 @@
         <Rectangle HorizontalAlignment="Left" Height="44" Margin="0,49,0,0" Stroke="#FFE2E1E1" VerticalAlignment="Top" Width="159" Fill="#FFE2E1E1"/>
         <Label Content="Фильтры" HorizontalAlignment="Left" Margin="27,57,0,0" VerticalAlignment="Top" Width="98" FontSize="14" HorizontalContentAlignment="Center" BorderBrush="#FFF0F0F0" Foreground="Black" FontWeight="Medium"/>
         <Label Content="Поиск по стране:" HorizontalAlignment="Left" Margin="11,107,0,0" VerticalAlignment="Top" Width="108" HorizontalContentAlignment="Center" BorderBrush="#FFF0F0F0" Foreground="Black"/>
-        <TextBox x:Name="FilterCity" HorizontalAlignment="Left" Margin="18,261,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="30" TextChanged="FilterCity_TextChanged"/>
-        <Label Content="Поиск по городу:" HorizontalAlignment="Left" Margin="11,230,0,0" VerticalAlignment="Top" Width="111" HorizontalContentAlignment="Center" BorderBrush="#FFF0F0F0" Foreground="Black"/>
+        <TextBox x:Name="FilterCity" HorizontalAlignment="Left" Margin="18,257,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="30" TextChanged="FilterCity_TextChanged"/>
+        <Label Content="Поиск по городу:" HorizontalAlignment="Left" Margin="11,226,0,0" VerticalAlignment="Top" Width="111" HorizontalContentAlignment="Center" BorderBrush="#FFF0F0F0" Foreground="Black"/>
         <Rectangle HorizontalAlignment="Left" Height="6" Margin="0,349,0,0" Stroke="#FFE2E1E1" VerticalAlignment="Top" Width="158" Fill="#FFE2E1E1"/>
-        <Button Content="Страны по алфавиту" HorizontalAlignment="Left" Margin="18,176,0,0" VerticalAlignment="Top" Height="30" Background="#FFE5E5EA" Foreground="#FF2C2C2E" BorderBrush="#FFE5E5EA" Width="120" Click="AlpSortCountry_Click"/>
+        <Button Content="Страны по алфавиту" HorizontalAlignment="Left" Margin="18,177,0,0" VerticalAlignment="Top" Height="30" Background="#FFE5E5EA" Foreground="#FF2C2C2E" BorderBrush="#FFE5E5EA" Width="120" Click="AlpSortCountry_Click"/>
         <Button Content="Города по алфавиту" HorizontalAlignment="Left" Margin="18,296,0,0" VerticalAlignment="Top" Height="30" Background="#FFE5E5EA" Foreground="#FF2C2C2E" BorderBrush="#FFE5E5EA" Width="120" Click="AlpSortCity_Click"/>
-        <Rectangle HorizontalAlignment="Left" Height="385" Margin="155,49,0,0" Stroke="#FFE2E1E1" VerticalAlignment="Top" Width="5" Fill="#FFE2E1E1"/>
+        <Rectangle HorizontalAlignment="Left" Height="395" Margin="155,49,0,0" Stroke="#FFE2E1E1" VerticalAlignment="Top" Width="5" Fill="#FFE2E1E1"/>
 
     </Grid>
 </Window>
