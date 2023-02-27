@@ -1,6 +1,6 @@
 # Tour 0.6
 
-Десктопное приложение "Tour" предназанчено для подбора турпутевки.
+Десктопное приложение "Ecotravel" предназанчено для подбора туристических путевок.
 Оно содержит в себе:
 
 1. Авторизацию/Регистрацию;
@@ -36,6 +36,8 @@
 4. Возможность создания нового пользователя;
 5. Возможность создания нового менеджера.
 
+Функционал:
+
 Авторизация:
 
 ![изображение](https://user-images.githubusercontent.com/99510963/221674977-c2996fda-9a45-4a89-aba9-7c22c7a6d2a6.png)
@@ -68,6 +70,100 @@
 
 
 
+2. Менеджер:
+
+2.1 Профиль менеджера:
+
+![изображение](https://user-images.githubusercontent.com/99510963/221679011-c06dcf3f-de1d-44ef-a3ff-94bc8e8c3b32.png)
+
+2.2 Просмотр всех пользователей:
+
+![изображение](https://user-images.githubusercontent.com/99510963/221679660-255a44bf-36d7-49fd-aa7e-967c486adece.png)
+
+2.3 Работа над заявками:
+
+2.3.1 Просмотр всех заявок:
+
+![изображение](https://user-images.githubusercontent.com/99510963/221679818-23d682eb-fd3f-45bd-bf6e-6b6fcb172171.png)
+
+2.3.2 Изменить статус заявки:
+
+![изображение](https://user-images.githubusercontent.com/99510963/221679929-9effbd8d-3a7e-420a-a30e-1c4ac68fb42d.png)
+
+2.3.3 Удалить заявку:
+
+![изображение](https://user-images.githubusercontent.com/99510963/221680033-f8b29673-d727-4b6e-ab1c-b3ef8f56e313.png)
 
 
 
+3. Администратор:
+
+3.1 Кабинет администратора:
+
+![изображение](https://user-images.githubusercontent.com/99510963/221680244-3095295b-1154-4900-bd01-a0311c6b2ecf.png)
+
+3.2 Создать нового пользователя:
+
+![изображение](https://user-images.githubusercontent.com/99510963/221680340-ea1c07a9-2aa3-427e-9e47-dc199b46184c.png)
+
+3.3 Удалить пользователя:
+
+![изображение](https://user-images.githubusercontent.com/99510963/221680416-082d9fcb-3869-4310-9884-81538b97e5e2.png)
+
+3.4 Работа с менеджерами:
+
+3.4.1 Просмотр всех менеджеров:
+
+![изображение](https://user-images.githubusercontent.com/99510963/221680584-0faa59a4-0763-4580-8cba-6452d797647f.png)
+
+3.4.2 Удалить менеджера:
+
+![изображение](https://user-images.githubusercontent.com/99510963/221680660-36cfa03a-c5b0-41cf-9bfe-9d899454b916.png)
+
+3.5 Создать менеджера:
+
+![изображение](https://user-images.githubusercontent.com/99510963/221680732-b5e88f4c-9be3-4dfa-9e31-bd10fa928606.png)
+
+3.6 Редактировать туры:
+
+![изображение](https://user-images.githubusercontent.com/99510963/221680811-6f99c4ce-bdd2-401c-8875-9d39199ed6e5.png)
+
+3.6.1 Добавить страну:
+
+![изображение](https://user-images.githubusercontent.com/99510963/221680894-215a28b4-6ab0-43e2-a71c-708f0b83a772.png)
+
+3.6.2 Удалить страну:
+
+![изображение](https://user-images.githubusercontent.com/99510963/221680944-fbf6fde3-ba5c-4a4d-a5e4-87cd4da57614.png)
+
+3.6.3 Добавить город:
+
+![изображение](https://user-images.githubusercontent.com/99510963/221681006-38e761d5-65f1-4f46-b14f-47c0016d3436.png)
+
+3.6.4 Удалить город:
+
+![изображение](https://user-images.githubusercontent.com/99510963/221681067-02986f74-697a-413a-825a-51759749e231.png)
+
+3.6.5 Добавить тип отдыха:
+
+![изображение](https://user-images.githubusercontent.com/99510963/221681124-6bed6e13-fa9d-4c39-a3fc-414af2484676.png)
+
+3.6.6 Удалить тип отдыха:
+
+![изображение](https://user-images.githubusercontent.com/99510963/221681184-3483c74d-27ff-4918-a416-653af9b10b1c.png)
+
+3.6.7 Добавить вид транспорта:
+
+![изображение](https://user-images.githubusercontent.com/99510963/221681345-282d96f9-276d-4aaf-b071-62281b7a8070.png)
+
+3.6.8 Удалить тип транспорта:
+
+![изображение](https://user-images.githubusercontent.com/99510963/221681303-25e66128-b8bc-4486-a6ab-2df4088ec3ac.png)
+
+3.6.9 Добавить вид размещения:
+
+![изображение](https://user-images.githubusercontent.com/99510963/221681427-46a1a441-7e1a-4ab4-9c01-e6443c15321d.png)
+
+3.6.10 Удалить вид размещения:
+
+![изображение](https://user-images.githubusercontent.com/99510963/221681520-ec513b38-5b94-4101-bfd3-caa5c8026dda.png)
