@@ -5,17 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Tour.Admin.Functions"
         mc:Ignorable="d"
-        Title="Удалить менеджера" Height="200" Width="400">
-    <Grid>
-        <Button Content="Удалить пользователя" HorizontalAlignment="Left" Margin="167,0,0,0" VerticalAlignment="Center" Height="30" Background="#FFD1EEFC" Width="152" Click="DeleteMng_Click"/>
-        <ComboBox x:Name="Mng" HorizontalAlignment="Left" Margin="85,0,0,0" VerticalAlignment="Center" Width="78" BorderBrush="#FFFFFCD6" Height="30">
-            <ComboBox.Background>
-                <LinearGradientBrush EndPoint="0,1">
-                    <GradientStop Color="#FFF0F0F0"/>
-                    <GradientStop Color="#FFFFFCD6" Offset="1"/>
-                </LinearGradientBrush>
-            </ComboBox.Background>
-        </ComboBox>
-        <Label Content="Id:" HorizontalAlignment="Left" Margin="55,0,0,0" VerticalAlignment="Center" Width="25" Height="30"/>
+        Title="Удалить менеджера" Height="210" Width="414">
+    <Grid Background="#FFF5F5F7">
+        <Button Content="Удалить" HorizontalAlignment="Left" Margin="195,0,0,0" VerticalAlignment="Center" Height="30" Background="#FF08D27B" Foreground="#FFF5F5F7" FontWeight="Medium" BorderBrush="#FFF5F5F7" Width="120" Click="DeleteMng_Click"/>
+        <ComboBox x:Name="Mng" HorizontalAlignment="Left" Margin="110,0,0,0" VerticalAlignment="Center" Width="78" BorderBrush="#FFE5E5EA" Height="30" Foreground="#FF2C2C2E" Background="#FFE5E5EA"/>
+        <Label Content="Id:" HorizontalAlignment="Left" Margin="80,0,0,0" VerticalAlignment="Center" Width="25" Height="30"/>
     </Grid>
 </Window>

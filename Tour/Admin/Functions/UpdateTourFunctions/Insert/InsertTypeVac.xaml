@@ -6,10 +6,10 @@
         xmlns:local="clr-namespace:Tour.Admin.Functions.UpdateTourFunctions.Insert"
         mc:Ignorable="d"
         Title="Добавить тип отдыха" Height="200" Width="400">
-    <Grid>
-        <TextBox x:Name="Type" HorizontalAlignment="Center" Margin="0,65,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="130" Height="22"/>
-        <Label Content="Тип отдыха" HorizontalAlignment="Left" Margin="130,34,0,0" VerticalAlignment="Top"/>
-        <Button Content="Добавить тип отдыха" HorizontalAlignment="Center" Margin="0,94,0,0" VerticalAlignment="Top" Height="25" Background="#FFD1EEFC" Width="130" Click="InsertType_Click"/>
+    <Grid Background="#FFF5F5F7">
+        <TextBox x:Name="Type" HorizontalAlignment="Left" Margin="171,45,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="30"/>
+        <Label Content="Тип отдыха" HorizontalAlignment="Left" Margin="89,47,0,0" VerticalAlignment="Top" Height="26"/>
+        <Button Content="Добавить" HorizontalAlignment="Left" Margin="125,84,0,0" VerticalAlignment="Top" Height="30" Background="#FF08D27B" Foreground="#FFF5F5F7" FontWeight="Medium" BorderBrush="#FFF5F5F7" Width="130" Click="InsertType_Click"/>
 
     </Grid>
 </Window>

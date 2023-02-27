@@ -5,13 +5,26 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Tour.Managers"
         mc:Ignorable="d"
-        Title="Пользователи" Height="350" Width="770">
-    <Grid>
-        <Rectangle HorizontalAlignment="Center" Height="49" Stroke="#FFB5D5CA" VerticalAlignment="Top" Width="770" Fill="#FFB5D5CA"/>
-        <Button Content="Назад" HorizontalAlignment="Left" Margin="708,15,0,0" VerticalAlignment="Top" BorderBrush="#FFB5D5CA" Background="#FFB5D5CA" Click="BackButton_Click"/>
-        <Rectangle HorizontalAlignment="Center" Height="35" Stroke="#FFE0A9AF" VerticalAlignment="Top" Width="770" Fill="#FFE0A9AF" Margin="0,49,0,0"/>
-        <Label Content="Профиль менеджера" HorizontalAlignment="Center" Margin="0,54,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
-        <ListView x:Name="OutputDb" Margin="0,84,0,0" ToolTip="База данных" BorderBrush="White">
+        Title="Пользователи" Height="360" Width="784">
+    <Grid Background="#FFF5F5F7">
+        <Rectangle HorizontalAlignment="Center" Height="49" VerticalAlignment="Top" Width="814">
+            <Rectangle.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <LinearGradientBrush.RelativeTransform>
+                        <TransformGroup>
+                            <ScaleTransform CenterY="0.5" CenterX="0.5"/>
+                            <SkewTransform CenterX="0.5" CenterY="0.5"/>
+                            <RotateTransform Angle="90" CenterX="0.5" CenterY="0.5"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </LinearGradientBrush.RelativeTransform>
+                    <GradientStop Color="#FF146F2D" Offset="1"/>
+                    <GradientStop Color="#FF3DA35D" Offset="0"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Button Content="Назад" HorizontalAlignment="Left" Margin="698,12,0,0" VerticalAlignment="Top" BorderBrush="#FF3DA35D" Background="White" Click="BackButton_Click" FontWeight="Medium" FontStretch="SemiCondensed" Foreground="#FF3DA35D" Height="27" Width="56"/>
+        <ListView x:Name="OutputDb" Margin="0,49,0,0" ToolTip="База данных" Background="#FFF5F5F7" BorderBrush="White" Foreground="#FF2C2C2E">
             <ListView.View>
                 <GridView>
                     <GridViewColumn DisplayMemberBinding="{Binding id}"
@@ -33,13 +46,13 @@
                 </GridView>
             </ListView.View>
         </ListView>
-        <Label Content="Ecotravel" HorizontalAlignment="Left" Margin="25,9,0,0" VerticalAlignment="Top" FontSize="18" FontWeight="Bold" Width="87" RenderTransformOrigin="0.5,0.5">
+        <Label Content="Ecotravel" HorizontalAlignment="Left" Margin="25,4,0,0" VerticalAlignment="Top" FontSize="24" FontWeight="Bold" Width="117" RenderTransformOrigin="0.5,0.5" Foreground="White">
             <Label.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
-                    <SkewTransform AngleY="0.252"/>
+                    <SkewTransform AngleY="0"/>
                     <RotateTransform/>
-                    <TranslateTransform Y="0.396"/>
+                    <TranslateTransform Y="0"/>
                 </TransformGroup>
             </Label.RenderTransform>
         </Label>

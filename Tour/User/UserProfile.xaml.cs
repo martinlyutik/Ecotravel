@@ -12,8 +12,6 @@ namespace Tour.User
 
             InitializeComponent();
 
-            Who.Content = "Профиль пользователя " + user.Namme;
-
             Surn.Text = user.Surname;
             Name.Text = user.Namme;
             Otch.Text = user.Otch;

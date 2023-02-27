@@ -5,9 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespacыe:Tour.Main"
         mc:Ignorable="d"
-        Title="Оставить заявку" Height="450" Width="800">
-    <Grid>
-        <ComboBox x:Name="City" HorizontalAlignment="Left" Margin="260,152,0,0" VerticalAlignment="Top" Width="110" BorderBrush="#FFFFFCD6">
+        Title="Оставить заявку" Height="460" Width="814">
+    <Grid Background="#FFF5F5F7">
+        <Rectangle RadiusX="10" RadiusY="10" HorizontalAlignment="Left" Height="216" Margin="103,146,0,0" VerticalAlignment="Top" Width="594" Fill="White" ScrollViewer.VerticalScrollBarVisibility="Disabled">
+            <Rectangle.Effect>
+                <DropShadowEffect BlurRadius="60" Color="#ebebf5" ShadowDepth="0"/>
+            </Rectangle.Effect>
+        </Rectangle>
+        <Label x:Name="Who" Content="Оформление заявки" HorizontalAlignment="Left" Margin="283,75,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="22" Foreground="#FF2D2D2F"/>
+        <ComboBox x:Name="City" HorizontalAlignment="Left" Margin="262,174,0,0" VerticalAlignment="Top" Width="110" BorderBrush="#FFFFFCD6" Height="25">
             <ComboBox.Background>
                 <LinearGradientBrush EndPoint="0,1">
                     <GradientStop Color="#FFF0F0F0"/>
@@ -15,9 +21,24 @@
                 </LinearGradientBrush>
             </ComboBox.Background>
         </ComboBox>
-        <Rectangle HorizontalAlignment="Center" Height="49" Stroke="#FFB5D5CA" VerticalAlignment="Top" Width="800" Fill="#FFB5D5CA"/>
-        <Button Content="Назад" HorizontalAlignment="Left" Margin="735,15,0,0" VerticalAlignment="Top" BorderBrush="#FFB5D5CA" Background="#FFB5D5CA" Click="BackButton_Click"/>
-        <Label Content="Tour" HorizontalAlignment="Left" Margin="25,9,0,0" VerticalAlignment="Top" FontSize="18" FontWeight="Bold" Width="52" RenderTransformOrigin="0.5,0.5">
+        <Rectangle HorizontalAlignment="Center" Height="49" VerticalAlignment="Top" Width="814">
+            <Rectangle.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <LinearGradientBrush.RelativeTransform>
+                        <TransformGroup>
+                            <ScaleTransform CenterY="0.5" CenterX="0.5"/>
+                            <SkewTransform CenterX="0.5" CenterY="0.5"/>
+                            <RotateTransform Angle="90" CenterX="0.5" CenterY="0.5"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </LinearGradientBrush.RelativeTransform>
+                    <GradientStop Color="#FF146F2D" Offset="1"/>
+                    <GradientStop Color="#FF3DA35D" Offset="0"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Button Content="Назад" HorizontalAlignment="Left" Margin="730,12,0,0" VerticalAlignment="Top" BorderBrush="#FF3DA35D" Background="White" Click="BackButton_Click" FontWeight="Medium" FontStretch="SemiCondensed" Foreground="#FF3DA35D" Height="27" Width="55"/>
+        <Label Content="Ecotravel" HorizontalAlignment="Left" Margin="25,4,0,0" VerticalAlignment="Top" FontSize="24" FontWeight="Bold" Width="117" RenderTransformOrigin="0.5,0.5" Foreground="White">
             <Label.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -27,9 +48,8 @@
                 </TransformGroup>
             </Label.RenderTransform>
         </Label>
-        <Label Content="Заявка" HorizontalAlignment="Center" Margin="0,6,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="18"/>
-        <Label Content="Город" HorizontalAlignment="Left" Margin="145,150,0,0" VerticalAlignment="Top" Width="45"/>
-        <ComboBox x:Name="VidRazm" HorizontalAlignment="Left" Margin="260,183,0,0" VerticalAlignment="Top" Width="110" BorderBrush="#FFFFFCD6">
+        <Label Content="Город" HorizontalAlignment="Left" Margin="147,174,0,0" VerticalAlignment="Top" Width="45"/>
+        <ComboBox x:Name="VidRazm" HorizontalAlignment="Left" Margin="262,207,0,0" VerticalAlignment="Top" Width="110" BorderBrush="#FFFFFCD6" Height="25">
             <ComboBox.Background>
                 <LinearGradientBrush EndPoint="0,1">
                     <GradientStop Color="#FFF0F0F0"/>
@@ -37,8 +57,8 @@
                 </LinearGradientBrush>
             </ComboBox.Background>
         </ComboBox>
-        <Label Content="Вид размещения" HorizontalAlignment="Left" Margin="145,181,0,0" VerticalAlignment="Top" Width="110"/>
-        <ComboBox x:Name="VidTrans" HorizontalAlignment="Left" Margin="260,215,0,0" VerticalAlignment="Top" Width="110" BorderBrush="#FFFFFCD6">
+        <Label Content="Вид размещения" HorizontalAlignment="Left" Margin="147,206,0,0" VerticalAlignment="Top" Width="110"/>
+        <ComboBox x:Name="VidTrans" HorizontalAlignment="Left" Margin="262,239,0,0" VerticalAlignment="Top" Width="110" BorderBrush="#FFFFFCD6" Height="25">
             <ComboBox.Background>
                 <LinearGradientBrush EndPoint="0,1">
                     <GradientStop Color="#FFF0F0F0"/>
@@ -46,8 +66,8 @@
                 </LinearGradientBrush>
             </ComboBox.Background>
         </ComboBox>
-        <Label Content="Вид транспорта" HorizontalAlignment="Left" Margin="145,213,0,0" VerticalAlignment="Top" Width="100"/>
-        <ComboBox x:Name="Typpe" HorizontalAlignment="Left" Margin="260,246,0,0" VerticalAlignment="Top" Width="110" BorderBrush="#FFFFFCD6">
+        <Label Content="Вид транспорта" HorizontalAlignment="Left" Margin="147,238,0,0" VerticalAlignment="Top" Width="100"/>
+        <ComboBox x:Name="Typpe" HorizontalAlignment="Left" Margin="262,271,0,0" VerticalAlignment="Top" Width="110" BorderBrush="#FFFFFCD6" Height="25">
             <ComboBox.Background>
                 <LinearGradientBrush EndPoint="0,1">
                     <GradientStop Color="#FFF0F0F0"/>
@@ -55,14 +75,14 @@
                 </LinearGradientBrush>
             </ComboBox.Background>
         </ComboBox>
-        <Label Content="Тип отдыха" HorizontalAlignment="Left" Margin="145,244,0,0" VerticalAlignment="Top" Width="75"/>
-        <DatePicker x:Name="DateStart" HorizontalAlignment="Left" Margin="533,150,0,0" VerticalAlignment="Top" Height="25" Width="107"/>
-        <Label Content="Дата начала поездки" HorizontalAlignment="Left" Margin="403,150,0,0" VerticalAlignment="Top" Width="125" Height="26"/>
-        <ComboBox x:Name="KolvoDney" HorizontalAlignment="Left" Margin="533,185,0,0" VerticalAlignment="Top" Width="107" Height="22"/>
-        <Label Content="Количество дней:" HorizontalAlignment="Left" Margin="403,181,0,0" VerticalAlignment="Top" Width="110" Height="26"/>
-        <Label Content="Количество путевок:" HorizontalAlignment="Left" Margin="403,213,0,0" VerticalAlignment="Top" Width="125" Height="26"/>
-        <TextBox x:Name="KolvoPutevok" HorizontalAlignment="Left" Margin="533,217,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="107" Height="22"/>
-        <Button Content="Отправить заявку" HorizontalAlignment="Center" Margin="0,310,0,0" VerticalAlignment="Top" Height="24" Background="#FFD1EEFC" Width="118" Click="SaveTicket_Click"/>
+        <Label Content="Тип отдыха" HorizontalAlignment="Left" Margin="147,269,0,0" VerticalAlignment="Top" Width="75"/>
+        <DatePicker x:Name="DateStart" HorizontalAlignment="Left" Margin="540,174,0,0" VerticalAlignment="Top" Height="25" Width="107"/>
+        <Label Content="Дата начала поездки" HorizontalAlignment="Left" Margin="405,172,0,0" VerticalAlignment="Top" Width="130" Height="26"/>
+        <ComboBox x:Name="KolvoDney" HorizontalAlignment="Left" Margin="540,207,0,0" VerticalAlignment="Top" Width="107" Height="25"/>
+        <Label Content="Количество дней" HorizontalAlignment="Left" Margin="405,206,0,0" VerticalAlignment="Top" Width="110" Height="26"/>
+        <Label Content="Количество путевок" HorizontalAlignment="Left" Margin="405,238,0,0" VerticalAlignment="Top" Width="125" Height="26"/>
+        <TextBox x:Name="KolvoPutevok" HorizontalAlignment="Left" Margin="540,239,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="107" Height="25"/>
+        <Button Content="Отправить заявку" HorizontalAlignment="Left" Margin="340,314,0,0" VerticalAlignment="Top" Height="30" Background="#FF08D27B" Foreground="#FFF5F5F7" FontWeight="Medium" Width="118" Click="SaveTicket_Click"/>
 
     </Grid>
 </Window>

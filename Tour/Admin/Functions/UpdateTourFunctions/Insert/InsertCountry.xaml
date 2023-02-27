@@ -6,12 +6,12 @@
         xmlns:local="clr-namespace:Tour.Admin.Functions.UpdateTourFunctions.Insert"
         mc:Ignorable="d"
         Title="Добавить страну" Height="200" Width="400">
-    <Grid>
-        <TextBox x:Name="Country" HorizontalAlignment="Left" Margin="93,70,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="149" Height="30"/>
-        <Label Content="Введите название страны:" HorizontalAlignment="Left" Margin="88,39,0,0" VerticalAlignment="Top"/>
-        <Button Content="Добавить страну" HorizontalAlignment="Left" Margin="93,105,0,0" VerticalAlignment="Top" Height="30" Background="#FFD1EEFC" Width="225" Click="InsertCountry_Click"/>
-        <ComboBox x:Name="Visa" HorizontalAlignment="Left" Margin="253,70,0,0" VerticalAlignment="Top" Width="65" Height="30"/>
-        <Label Content="Виза:" HorizontalAlignment="Left" Margin="267,39,0,0" VerticalAlignment="Top"/>
+    <Grid Background="#FFF5F5F7">
+        <TextBox x:Name="Country" HorizontalAlignment="Left" Margin="139,23,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="149" Height="30"/>
+        <Label Content="Страна" HorizontalAlignment="Left" Margin="85,25,0,0" VerticalAlignment="Top"/>
+        <Button Content="Добавить" HorizontalAlignment="Left" Margin="127,102,0,0" VerticalAlignment="Top" Height="30" Background="#FF08D27B" Foreground="#FFF5F5F7" FontWeight="Medium" BorderBrush="#FFF5F5F7" Width="120" Click="InsertCountry_Click"/>
+        <ComboBox x:Name="Visa" HorizontalAlignment="Left" Margin="139,59,0,0" VerticalAlignment="Top" Width="149" Height="30"/>
+        <Label Content="Виза" HorizontalAlignment="Left" Margin="85,59,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>

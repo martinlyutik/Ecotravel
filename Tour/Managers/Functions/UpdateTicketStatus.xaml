@@ -5,10 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Tour.Managers.Functions"
         mc:Ignorable="d"
-        Title="Изменить статус заявки" Height="200" Width="400">
-    <Grid>
-        <Button Content="Изменить" HorizontalAlignment="Center" Margin="0,109,0,0" VerticalAlignment="Top" Height="30" Background="#FFD1EEFC" Width="152" Click="UpdateTicketStatus_Click"/>
-        <ComboBox x:Name="Ticket" HorizontalAlignment="Left" Margin="60,49,0,0" VerticalAlignment="Top" Width="78" BorderBrush="#FFFFFCD6" Height="30">
+        Title="Изменить статус заявки" Height="210" Width="414">
+    <Grid Background="#FFF5F5F7">
+        <Button Content="Изменить" HorizontalAlignment="Left" Margin="142,92,0,0" VerticalAlignment="Top" Height="30" Background="#FF08D27B" Foreground="#FFF5F5F7" FontWeight="Medium" Width="120" Click="UpdateTicketStatus_Click"/>
+        <ComboBox x:Name="Ticket" HorizontalAlignment="Left" Margin="55,49,0,0" VerticalAlignment="Top" Width="78" BorderBrush="#FFFFFCD6" Height="30">
             <ComboBox.Background>
                 <LinearGradientBrush EndPoint="0,1">
                     <GradientStop Color="#FFF0F0F0"/>
@@ -16,8 +16,8 @@
                 </LinearGradientBrush>
             </ComboBox.Background>
         </ComboBox>
-        <Label Content="Id:" HorizontalAlignment="Left" Margin="30,49,0,0" VerticalAlignment="Top" Width="25" Height="30"/>
-        <ComboBox x:Name="Status" HorizontalAlignment="Left" Margin="205,48,0,0" VerticalAlignment="Top" Width="160" BorderBrush="#FFFFFCD6" Height="30">
+        <Label Content="Id:" HorizontalAlignment="Left" Margin="25,49,0,0" VerticalAlignment="Top" Width="25" Height="30"/>
+        <ComboBox x:Name="Status" HorizontalAlignment="Left" Margin="200,48,0,0" VerticalAlignment="Top" Width="160" BorderBrush="#FFFFFCD6" Height="30">
             <ComboBox.Background>
                 <LinearGradientBrush EndPoint="0,1">
                     <GradientStop Color="#FFF0F0F0"/>
@@ -25,7 +25,7 @@
                 </LinearGradientBrush>
             </ComboBox.Background>
         </ComboBox>
-        <Label Content="Статус:" HorizontalAlignment="Left" Margin="150,49,0,0" VerticalAlignment="Top" Width="50" Height="30"/>
+        <Label Content="Статус:" HorizontalAlignment="Left" Margin="145,49,0,0" VerticalAlignment="Top" Width="50" Height="30"/>
 
     </Grid>
 </Window>

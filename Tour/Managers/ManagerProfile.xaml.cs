@@ -8,8 +8,6 @@ namespace Tour.Managers
         {
             InitializeComponent();
 
-            Who.Content = "Профиль менеджера " + manager.Login;
-
             Login.Text = manager.Login;
             Number.Text = manager.Number;
             Email.Text = manager.Email;

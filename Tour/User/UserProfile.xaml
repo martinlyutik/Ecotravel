@@ -5,39 +5,57 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Tour.User"
         mc:Ignorable="d"
-        Title="Профиль пользователя" Height="450" Width="800">
-    <Grid>
-        <Rectangle HorizontalAlignment="Center" Height="49" Stroke="#FFB5D5CA" VerticalAlignment="Top" Width="800" Fill="#FFB5D5CA"/>
-        <Button Content="Назад" HorizontalAlignment="Left" Margin="735,15,0,0" VerticalAlignment="Top" BorderBrush="#FFB5D5CA" Background="#FFB5D5CA" Click="BackButton_Click"/>
-        <Rectangle HorizontalAlignment="Center" Height="35" Stroke="#FFE0A9AF" VerticalAlignment="Top" Width="800" Fill="#FFE0A9AF" Margin="0,49,0,0"/>
-        <Label x:Name="Who" Content="Профиль пользователя" HorizontalAlignment="Center" Margin="0,54,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
-        <TextBlock x:Name="Surn" HorizontalAlignment="Left" Margin="164,152,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="16" Width="181"/>
-        <Label Content="Фамилия:" HorizontalAlignment="Left" Margin="90,147,0,0" VerticalAlignment="Top" Width="69" FontWeight="Bold"/>
-        <TextBlock x:Name="Name" HorizontalAlignment="Left" Margin="134,183,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="16" Width="173"/>
-        <Label Content="Имя:" HorizontalAlignment="Left" Margin="90,178,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
-        <TextBlock x:Name="Otch" HorizontalAlignment="Left" Margin="162,214,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="16" Width="188"/>
-        <Label Content="Отчество:" HorizontalAlignment="Left" Margin="90,209,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
-        <TextBlock x:Name="Passport" HorizontalAlignment="Left" Margin="229,242,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="16" Width="171"/>
-        <Label Content="Паспортные данные:" HorizontalAlignment="Left" Margin="90,237,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
-        <TextBlock x:Name="Visa" HorizontalAlignment="Left" Margin="136,273,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="16" Width="178"/>
-        <Label Content="Виза:" HorizontalAlignment="Left" Margin="90,268,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.554,0.271" FontWeight="Bold"/>
-        <TextBlock x:Name="Email" HorizontalAlignment="Left" Margin="139,335,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="16" Width="146"/>
-        <Label Content="Email:" HorizontalAlignment="Left" Margin="90,330,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
-        <TextBlock x:Name="Number" HorizontalAlignment="Left" Margin="208,304,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="16" Width="172"/>
-        <Label Content="Номер телефона:" HorizontalAlignment="Left" Margin="90,299,0,0" VerticalAlignment="Top" Width="113" FontWeight="Bold"/>
-        <Button Content="Редактировать информацию" HorizontalAlignment="Left" Margin="538,270,0,0" VerticalAlignment="Top" Height="30" Background="#FFD1EEFC" Width="182" Click="UpdateInfo_Click"/>
-        <Button Content="Перейти в каталог туров" BorderBrush="#FF707070" Background="#FFFFFCD6" HorizontalAlignment="Left" Margin="536,186,0,0" VerticalAlignment="Top" Click="OpenCatalog_Click" Height="30" Width="184"/>
-        <Button Content="Мои заявки" HorizontalAlignment="Left" Margin="536,228,0,0" VerticalAlignment="Top" Height="30" Background="#FFD1EEFC" Width="184" Click="CheckTickets_Click"/>
-        <Label Content="Ecotravel" HorizontalAlignment="Left" Margin="25,9,0,0" VerticalAlignment="Top" FontSize="18" FontWeight="Bold" Width="87" RenderTransformOrigin="0.5,0.5">
+        Title="Профиль пользователя" Height="460" Width="814">
+    <Grid Background="#FFF5F5F7">
+        <Rectangle RadiusX="10" RadiusY="10" HorizontalAlignment="Left" Height="271" Margin="78,128,0,0" VerticalAlignment="Top" Width="460" Fill="White" ScrollViewer.VerticalScrollBarVisibility="Disabled">
+            <Rectangle.Effect>
+                <DropShadowEffect BlurRadius="60" Color="#ebebf5" ShadowDepth="0"/>
+            </Rectangle.Effect>
+        </Rectangle>
+        <Rectangle HorizontalAlignment="Center" Height="49" VerticalAlignment="Top" Width="814">
+            <Rectangle.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <LinearGradientBrush.RelativeTransform>
+                        <TransformGroup>
+                            <ScaleTransform CenterY="0.5" CenterX="0.5"/>
+                            <SkewTransform CenterX="0.5" CenterY="0.5"/>
+                            <RotateTransform Angle="90" CenterX="0.5" CenterY="0.5"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </LinearGradientBrush.RelativeTransform>
+                    <GradientStop Color="#FF146F2D" Offset="1"/>
+                    <GradientStop Color="#FF3DA35D" Offset="0"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Button Content="Назад" HorizontalAlignment="Left" Margin="730,12,0,0" VerticalAlignment="Top" BorderBrush="#FF3DA35D" Background="White" Click="BackButton_Click" FontWeight="Medium" FontStretch="SemiCondensed" Foreground="#FF3DA35D" Height="27" Width="55"/>
+        <Label Content="Личный кабинет" HorizontalAlignment="Left" Margin="98,75,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="22" Foreground="#FF2D2D2F"/>
+        <TextBlock x:Name="Surn" HorizontalAlignment="Left" Margin="172,142,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="16" Width="180"/>
+        <Label Content="Фамилия:" HorizontalAlignment="Left" Margin="98,137,0,0" VerticalAlignment="Top" Width="68" FontWeight="Bold" Foreground="#FF585151"/>
+        <TextBlock x:Name="Name" HorizontalAlignment="Left" Margin="142,173,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="16" Width="172"/>
+        <Label Content="Имя:" HorizontalAlignment="Left" Margin="98,168,0,0" VerticalAlignment="Top" FontWeight="Bold" Foreground="#FF585151"/>
+        <TextBlock x:Name="Otch" HorizontalAlignment="Left" Margin="170,204,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="16" Width="188"/>
+        <Label Content="Отчество:" HorizontalAlignment="Left" Margin="98,199,0,0" VerticalAlignment="Top" FontWeight="Bold" Foreground="#FF585151"/>
+        <TextBlock x:Name="Passport" HorizontalAlignment="Left" Margin="236,232,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="16" Width="172"/>
+        <Label Content="Паспортные данные:" HorizontalAlignment="Left" Margin="98,227,0,0" VerticalAlignment="Top" FontWeight="Bold" Foreground="#FF585151"/>
+        <TextBlock x:Name="Visa" HorizontalAlignment="Left" Margin="144,263,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="16" Width="178"/>
+        <Label Content="Виза:" HorizontalAlignment="Left" Margin="98,258,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.554,0.271" FontWeight="Bold" Foreground="#FF585151"/>
+        <TextBlock x:Name="Email" HorizontalAlignment="Left" Margin="146,325,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="16" Width="146"/>
+        <Label Content="Email:" HorizontalAlignment="Left" Margin="98,320,0,0" VerticalAlignment="Top" FontWeight="Bold" Foreground="#FF585151"/>
+        <TextBlock x:Name="Number" HorizontalAlignment="Left" Margin="216,294,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="16" Width="172"/>
+        <Label Content="Номер телефона:" HorizontalAlignment="Left" Margin="98,289,0,0" VerticalAlignment="Top" Width="112" FontWeight="Bold" Foreground="#FF585151"/>
+        <Button Content="Редактировать информацию" HorizontalAlignment="Left" Margin="103,354,0,0" VerticalAlignment="Top" Height="30" Background="#FF08D27B" Width="182"  Foreground="White" FontWeight="Medium" BorderBrush="White"  Click="UpdateInfo_Click"/>
+        <Button Content="Перейти в каталог туров" Background="#FFE5E5EA" HorizontalAlignment="Left" Margin="574,128,0,0" VerticalAlignment="Top" Click="OpenCatalog_Click" Height="30" Width="184" Foreground="#FF2C2C2E" BorderBrush="#FFE5E5EA"/>
+        <Button Content="Мои заявки" HorizontalAlignment="Left" Margin="574,168,0,0" VerticalAlignment="Top" Height="30" Background="#FFE5E5EA" Width="184" Click="CheckTickets_Click" BorderBrush="#FFE5E5EA"/>
+        <Label Content="Ecotravel" HorizontalAlignment="Left" Margin="25,4,0,0" VerticalAlignment="Top" FontSize="24" FontWeight="Bold" Width="117" RenderTransformOrigin="0.5,0.5" Foreground="White">
             <Label.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
-                    <SkewTransform AngleY="0.252"/>
+                    <SkewTransform AngleY="0"/>
                     <RotateTransform/>
-                    <TranslateTransform Y="0.396"/>
+                    <TranslateTransform Y="0"/>
                 </TransformGroup>
             </Label.RenderTransform>
         </Label>
-
     </Grid>
 </Window>

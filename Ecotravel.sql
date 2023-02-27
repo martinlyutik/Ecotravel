@@ -1,4 +1,18 @@
-﻿SELECT * FROM Users
+CREATE DATABASE Ecotravel;
+USE Ecotravel;
+
+CREATE TABLE Users
+(
+	id INT NOT NULL IDENTITY(1,1) PRIMARY KEY,
+	namme VARCHAR(50) NOT NULL,
+	surname VARCHAR(50) NOT NULL,
+	otch VARCHAR(50) NOT NULL,
+	passport VARCHAR(50) NOT NULL,
+	visa VARCHAR(50) NOT NULL,
+	email VARcHAR(50) NOT NULL,
+	number VARCHAR(50) NOT NULL,
+	passwrd VARCHAR(50) NOT NULL
+)
 
 CREATE TABLE Managers
 (
@@ -10,36 +24,12 @@ CREATE TABLE Managers
 	passwrd VARCHAR(50) NOT NULL
 )
 
-DROP TABLE Managers
-
 CREATE TABLE Country
 (
 	id INT NOT NULL IDENTITY(1,1) PRIMARY KEY,
 	namme VARCHAR(50) NOT NULL,
 	visayn VARCHAR(50) NOT NULL
 )
-
-SELECT * FROM ticket
-
-INSERT INTO Country
-(namme, visayn)
-VALUES
-('Болгария','Да'),
-('Казахстан','Нет'),
-('Швеция','Да')
-
-INSERT INTO City
-(id_country, namme)
-VALUES
-('2','Абай'),
-('2','Акколь'),
-('1','София'),
-('1','Варна'),
-('3','Гренна')
-
-SELECT * FROM Country
-
-UPDATE Country SET namme = 'Венгрия' WHERE id = 6
 
 CREATE TABLE City
 (
@@ -49,22 +39,11 @@ CREATE TABLE City
 	FOREIGN KEY (id_country) REFERENCES Country (id) ON DELETE CASCADE
 )
 
-DROP TABLE City
-
-DROP TABLE Country
-
 CREATE TABLE Vid
 (
 	id INT NOT NULL IDENTITY(1,1) PRIMARY KEY,
 	namme VARCHAR(50)
 )
-
-INSERT INTO Vid
-(namme)
-VALUES
-('Отель'),
-('Хостел'),
-('Апартаменты')
 
 CREATE TABLE Typpe
 (
@@ -72,33 +51,11 @@ CREATE TABLE Typpe
 	namme VARCHAR(50) NOT NULL
 )
 
-INSERT INTO Typpe
-(namme)
-VALUES
-('Путешествие'),
-('Оздоровление'),
-('Гастрономический интерес')
-
 CREATE TABLE Vid_Transp
 (
 	id INT NOT NULL IDENTITY(1,1) PRIMARY KEY,
 	namme VARCHAR(50) NOT NULL
 )
-
-INSERT INTO Vid_Transp
-(namme)
-VALUES
-('Автобус'),
-('Троллейбус'),
-('Трамвай'),
-('Метро'),
-('Такси'),
-('Поезд'),
-('Каршеринг')
-
-DROP TABLE Vid_Transp
-
-DROP TABLE Cost_Transp
 
 CREATE TABLE Cost_Transp
 (
@@ -109,17 +66,6 @@ CREATE TABLE Cost_Transp
 	FOREIGN KEY (id_vid_transp) REFERENCES Vid_Transp (id) ON DELETE CASCADE,
 	FOREIGN KEY (id_city) REFERENCES City (id) ON DELETE CASCADE
 )
-
-DROP TABLE Cost_Transp
-
-INSERT INTO Cost_Transp
-(cost, service_level, id_vid_transp, id_city)
-VALUES
-('5','3/5','1','1'),
-('5','3/5','2','1'),
-('5','3/5','3','1'),
-('2','3/5','1','2'),
-('3','3/5','1','3')
 
 CREATE TABLE Razmesch
 (
@@ -133,16 +79,6 @@ CREATE TABLE Razmesch
 	FOREIGN KEY (id_vid) REFERENCES Vid(id) ON DELETE CASCADE,
 	FOREIGN KEY (id_city) REFERENCES City(id) ON DELETE CASCADE
 )
-
-DROP TABLE Razmesch
-
-INSERT INTO Razmesch
-(namme, adress, service_level, cost_per_day, id_vid, id_city)
-VALUES
-('Отель Элеон','Красноармейская 4','Все включено','300','1','1'),
-('Хостел Швеция','Швицлиан 34','Койко-место','20','2','5'),
-('Отель Звезда','Нечипоренко 8','Завтраки','90','1','2'),
-('Квартира 8','Постбулг 14','Самообслуживание','100','3','4')
 
 CREATE TABLE ticket
 (
@@ -164,18 +100,6 @@ CREATE TABLE ticket
 	FOREIGN KEY (id_user) REFERENCES Users(id) ON DELETE CASCADE
 )
 
-DROP TABLE ticket
-
-DROP TABLE Vid
-
-DROP TABLE Vid_Transp
-
-DROP TABLE Typpe
-
-DROP TABLE Country
-
-DROP TABLE City
-
 CREATE TABLE Obrasch
 (
 	id INT NOT NULL IDENTITY(1,1) PRIMARY KEY,
@@ -189,5 +113,3 @@ CREATE TABLE Obrasch
 	FOREIGN KEY (id_user) REFERENCES Users(id) ON DELETE CASCADE,
 	FOREIGN KEY (id_mng) REFERENCES Managers(id) ON DELETE CASCADE
 )
-
-DROP TABLE Obrasch

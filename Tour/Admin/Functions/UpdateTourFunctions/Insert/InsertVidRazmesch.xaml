@@ -6,10 +6,10 @@
         xmlns:local="clr-namespace:Tour.Admin.Functions.UpdateTourFunctions.Insert"
         mc:Ignorable="d"
         Title="Добавить вид размещения" Height="200" Width="400">
-    <Grid>
-        <TextBox x:Name="VidRazm" HorizontalAlignment="Center" Margin="0,65,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="130" Height="22"/>
-        <Label Content="Вид размещения" HorizontalAlignment="Left" Margin="130,34,0,0" VerticalAlignment="Top"/>
-        <Button Content="Добавить" HorizontalAlignment="Center" Margin="0,94,0,0" VerticalAlignment="Top" Height="25" Background="#FFD1EEFC" Width="130" Click="InsertVidRazm_Click"/>
+    <Grid Background="#FFF5F5F7">
+        <TextBox x:Name="VidRazm" HorizontalAlignment="Left" Margin="185,51,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="130" Height="30"/>
+        <Label Content="Вид размещения" HorizontalAlignment="Left" Margin="77,52,0,0" VerticalAlignment="Top"/>
+        <Button Content="Добавить" HorizontalAlignment="Left" Margin="120,92,0,0" VerticalAlignment="Top" Height="30" Background="#FF08D27B" Foreground="#FFF5F5F7" FontWeight="Medium" BorderBrush="#FFF5F5F7" Width="130" Click="InsertVidRazm_Click"/>
 
     </Grid>
 </Window>
