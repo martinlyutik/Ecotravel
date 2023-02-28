@@ -40,7 +40,7 @@
 
 Авторизация:
 
-![изображение](https://user-images.githubusercontent.com/99510963/221674977-c2996fda-9a45-4a89-aba9-7c22c7a6d2a6.png)
+![изображение](https://user-images.githubusercontent.com/99510963/221898315-24562f72-6877-486f-8d9d-11170bdd0d52.png)
 
 Регистрация:
 
@@ -72,9 +72,9 @@
 
 2. Менеджер:
 
-2.1 Профиль менеджера:
+2.1 Кабинет менеджера:
 
-![изображение](https://user-images.githubusercontent.com/99510963/221679011-c06dcf3f-de1d-44ef-a3ff-94bc8e8c3b32.png)
+![изображение](https://user-images.githubusercontent.com/99510963/221898960-d6685d3d-b08b-4ed5-9038-aa0ce7263499.png)
 
 2.2 Просмотр всех пользователей:
 
@@ -84,7 +84,7 @@
 
 2.3.1 Просмотр всех заявок:
 
-![изображение](https://user-images.githubusercontent.com/99510963/221679818-23d682eb-fd3f-45bd-bf6e-6b6fcb172171.png)
+![изображение](https://user-images.githubusercontent.com/99510963/221899613-5c50ec08-5118-4a60-9668-ae484433f1a7.png)
 
 2.3.2 Изменить статус заявки:
 
@@ -100,7 +100,7 @@
 
 3.1 Кабинет администратора:
 
-![изображение](https://user-images.githubusercontent.com/99510963/221680244-3095295b-1154-4900-bd01-a0311c6b2ecf.png)
+![изображение](https://user-images.githubusercontent.com/99510963/221899175-e8547544-275e-4220-a49b-4547ccb9d176.png)
 
 3.2 Создать нового пользователя:
 
@@ -114,7 +114,7 @@
 
 3.4.1 Просмотр всех менеджеров:
 
-![изображение](https://user-images.githubusercontent.com/99510963/221680584-0faa59a4-0763-4580-8cba-6452d797647f.png)
+![изображение](https://user-images.githubusercontent.com/99510963/221899327-87da5717-fa39-42be-9740-f41981301eff.png)
 
 3.4.2 Удалить менеджера:
 
