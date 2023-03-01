@@ -60,5 +60,10 @@ namespace Tour.User
         {
             this.Hide();
         }
+
+        private void ClosingButton(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            Application.Current.Shutdown();
+        }
     }
 }

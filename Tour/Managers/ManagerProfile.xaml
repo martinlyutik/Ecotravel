@@ -6,6 +6,7 @@
         xmlns:local="clr-namespace:Tour.Managers"
         mc:Ignorable="d"
         WindowStartupLocation="CenterScreen"
+        Closing="ClosingButton"
         Title="Профиль менееджера" Height="460" Width="814">
     <Grid Background="#FFF5F5F7">
         <Rectangle RadiusX="10" RadiusY="10" HorizontalAlignment="Left" Height="157" Margin="81,137,0,0" VerticalAlignment="Top" Width="393" Fill="White" ScrollViewer.VerticalScrollBarVisibility="Disabled">
@@ -38,7 +39,7 @@
         <Label Content="Email:" HorizontalAlignment="Left" Margin="97,248,0,0" VerticalAlignment="Top" FontWeight="Bold" Foreground="#FF585151"/>
         <TextBlock x:Name="Number" HorizontalAlignment="Left" Margin="215,222,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="16" Width="117"/>
         <Label Content="Номер телефона:" HorizontalAlignment="Left" Margin="98,217,0,0" VerticalAlignment="Top" FontWeight="Bold" Foreground="#FF585151"/>
-        <Button Content="Вывести список пользователей" HorizontalAlignment="Left" Margin="530,137,0,0" VerticalAlignment="Top" Height="30" Background="#FF08D27B" Foreground="White" FontWeight="Medium" BorderBrush="White" Width="185" Click="SelectAllUsers_Click"/>
+        <Button Content="Вывести пользователей" HorizontalAlignment="Left" Margin="530,137,0,0" VerticalAlignment="Top" Height="30" Background="#FF08D27B" Foreground="White" FontWeight="Medium" BorderBrush="White" Width="185" Click="SelectAllUsers_Click"/>
         <Button Content="Работа над заявками" HorizontalAlignment="Left" Margin="530,177,0,0" VerticalAlignment="Top" Height="30" Background="#FF08D27B" Width="185"  Foreground="White" FontWeight="Medium" BorderBrush="White" Click="WorkOnTickets_Click"/>
         <Label Content="Личный кабинет" HorizontalAlignment="Left" Margin="98,75,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="22" Foreground="#FF2D2D2F"/>
         <Label Content="Ecotravel" HorizontalAlignment="Left" Margin="25,4,0,0" VerticalAlignment="Top" FontSize="24" FontWeight="Bold" Width="117" RenderTransformOrigin="0.5,0.5" Foreground="White">

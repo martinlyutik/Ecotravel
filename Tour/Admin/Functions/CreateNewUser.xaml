@@ -6,6 +6,7 @@
         xmlns:local="clr-namespace:Tour.Admin.Functions"
         mc:Ignorable="d"
         WindowStartupLocation="CenterScreen"
+        Closing="ClosingButton"
         Title="Создание пользователя" Height="460" Width="814">
     <Grid Background="#FFF5F5F7">
         <Rectangle HorizontalAlignment="Center" Height="49" VerticalAlignment="Top" Width="814">

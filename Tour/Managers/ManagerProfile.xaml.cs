@@ -32,5 +32,10 @@ namespace Tour.Managers
             SelectAllTickets tick = new SelectAllTickets();
             tick.Show();
         }
+
+        private void ClosingButton(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            Application.Current.Shutdown();
+        }
     }
 }

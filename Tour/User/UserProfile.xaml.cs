@@ -46,5 +46,10 @@ namespace Tour.User
             CheckTicket tick = new CheckTicket(_user);
             tick.Show();
         }
+
+        private void ClosingButton(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            Application.Current.Shutdown();
+        }
     }
 }

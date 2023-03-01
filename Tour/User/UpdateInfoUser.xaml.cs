@@ -165,5 +165,10 @@ namespace Tour.User
                 MessageBox.Show("Ошибка!");
             }
         }
+
+        private void ClosingButton(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            Application.Current.Shutdown();
+        }
     }
 }

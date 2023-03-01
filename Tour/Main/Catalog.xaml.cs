@@ -163,5 +163,10 @@ namespace Tour.Main
                 CityList.Items.Add(item);
             }
         }
+
+        private void ClosingButton(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            Application.Current.Shutdown();
+        }
     }
 }

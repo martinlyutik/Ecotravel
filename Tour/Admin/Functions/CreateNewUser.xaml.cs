@@ -173,5 +173,10 @@ namespace Tour.Admin.Functions
                 MessageBox.Show("Данные введены неверно! Попробуйте еще раз.");
             }
         }
+
+        private void ClosingButton(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            Application.Current.Shutdown();
+        }
     }
 }

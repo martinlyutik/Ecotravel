@@ -6,6 +6,7 @@
         xmlns:local="clr-namespace:Tour.Admin.Functions"
         mc:Ignorable="d"
         WindowStartupLocation="CenterScreen"
+        Closing="ClosingButton"
         Title="Работа с менеджерами" Height="460" Width="814">
     <Grid Background="#FFF5F5F7">
         <ListView x:Name="OutputDb" Margin="287,139,60,72" ToolTip="База данных" BorderBrush="{x:Null}" Foreground="#FF2C2C2E">
@@ -26,7 +27,7 @@
                 </GridView>
             </ListView.View>
         </ListView>
-        <Button Content="Вывести список менеджеров" HorizontalAlignment="Left" Margin="60,139,0,0" VerticalAlignment="Top" Height="30" Background="#FF08D27B" Foreground="#FFF5F5F7" FontWeight="Medium" Width="183" Click="SelectMng_Click"/>
+        <Button Content="Вывести менеджеров" HorizontalAlignment="Left" Margin="60,139,0,0" VerticalAlignment="Top" Height="30" Background="#FF08D27B" Foreground="#FFF5F5F7" FontWeight="Medium" Width="183" Click="SelectMng_Click"/>
         <Rectangle HorizontalAlignment="Center" Height="49" VerticalAlignment="Top" Width="814">
             <Rectangle.Fill>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">

@@ -6,6 +6,7 @@
         xmlns:local="clr-namespace:Tour.Admin.Functions"
         mc:Ignorable="d"
         WindowStartupLocation="CenterScreen"
+        Closing="ClosingButton"
         Title="Удалить менеджера" Height="210" Width="414">
     <Grid Background="#FFF5F5F7">
         <Button Content="Удалить" HorizontalAlignment="Left" Margin="195,0,0,0" VerticalAlignment="Center" Height="30" Background="#FF08D27B" Foreground="#FFF5F5F7" FontWeight="Medium" BorderBrush="#FFF5F5F7" Width="120" Click="DeleteMng_Click"/>

@@ -82,5 +82,10 @@ namespace Tour.Admin
             Functions.UpdateTours updt = new Functions.UpdateTours();
             updt.Show();
         }
+
+        private void ClosingButton(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            Application.Current.Shutdown();
+        }
     }
 }

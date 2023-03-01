@@ -6,10 +6,11 @@
         xmlns:local="clr-namespace:Tour.Admin.Functions.UpdateTourFunctions.Delete"
         mc:Ignorable="d"
         WindowStartupLocation="CenterScreen"
+        Closing="ClosingButton"
         Title="Удалить страну" Height="200" Width="400">
     <Grid Background="#FFF5F5F7">
-        <Button Content="Удалить" HorizontalAlignment="Left" Margin="192,0,0,0" VerticalAlignment="Center" Height="30" Background="#FF08D27B" Foreground="#FFF5F5F7" FontWeight="Medium" BorderBrush="#FFF5F5F7" Width="120" Click="DeleteCountry_Click"/>
-        <ComboBox x:Name="Country" HorizontalAlignment="Left" Margin="110,0,0,0" VerticalAlignment="Center" Width="78" BorderBrush="#FFFFFCD6" Height="30">
+        <Button Content="Удалить" HorizontalAlignment="Left" Margin="216,0,0,0" VerticalAlignment="Center" Height="30" Background="#FF08D27B" Foreground="#FFF5F5F7" FontWeight="Medium" BorderBrush="#FFF5F5F7" Width="120" Click="DeleteCountry_Click"/>
+        <ComboBox x:Name="Country" HorizontalAlignment="Left" Margin="134,0,0,0" VerticalAlignment="Center" Width="78" BorderBrush="#FFFFFCD6" Height="30">
             <ComboBox.Background>
                 <LinearGradientBrush EndPoint="0,1">
                     <GradientStop Color="#FFF0F0F0"/>
@@ -17,7 +18,7 @@
                 </LinearGradientBrush>
             </ComboBox.Background>
         </ComboBox>
-        <Label Content="Id:" HorizontalAlignment="Left" Margin="80,0,0,0" VerticalAlignment="Center" Width="25" Height="30"/>
+        <Label Content="Название:" HorizontalAlignment="Left" Margin="65,0,0,0" VerticalAlignment="Center" Width="69" Height="30"/>
 
     </Grid>
 </Window>

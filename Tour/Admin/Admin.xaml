@@ -6,6 +6,7 @@
         xmlns:local="clr-namespace:Tour.Admin"
         mc:Ignorable="d"
         WindowStartupLocation="CenterScreen"
+        Closing="ClosingButton"
         Title="Профиль администратора" Height="460" Width="814">
     <Grid Background="#FFF5F5F7">
         <Rectangle HorizontalAlignment="Center" Height="49" VerticalAlignment="Top" Width="814">
@@ -50,7 +51,7 @@
             </ListView.View>
         </ListView>
         <Button Content="Вывести пользователей" HorizontalAlignment="Left" Margin="60,139,0,0" VerticalAlignment="Top" Height="30" Width="183" Click="SelectUser_Click" Background="#FF08D27B" Foreground="#FFF5F5F7" FontWeight="Medium"/>
-        <Button Content="Создать нового пользователя" HorizontalAlignment="Left" Margin="60,179,0,0" VerticalAlignment="Top" Height="30" Width="183" Click="CreateUser_Click" Background="#FF08D27B" Foreground="#FFF5F5F7" FontWeight="Medium"/>
+        <Button Content="Создать пользователя" HorizontalAlignment="Left" Margin="60,179,0,0" VerticalAlignment="Top" Height="30" Width="183" Click="CreateUser_Click" Background="#FF08D27B" Foreground="#FFF5F5F7" FontWeight="Medium"/>
         <Button Content="Создать менеджера" HorizontalAlignment="Left" Margin="60,299,0,0" VerticalAlignment="Top" Height="30" Width="183" Click="CreateManager_Click" Background="#FF08D27B" Foreground="#FFF5F5F7" FontWeight="Medium"/>
         <Button Content="Работа с менеджерами" HorizontalAlignment="Left" Margin="60,259,0,0" VerticalAlignment="Top" Height="30" Width="183" Click="SelectMng_Click" Background="#FF08D27B" Foreground="#FFF5F5F7" FontWeight="Medium"/>
         <Button Content="Удалить пользователя" HorizontalAlignment="Left" Margin="60,220,0,0" VerticalAlignment="Top" Height="30" Width="183" Click="DeleteUser_Click" Background="#FF08D27B" Foreground="#FFF5F5F7" FontWeight="Medium"/>

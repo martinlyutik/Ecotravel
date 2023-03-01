@@ -87,5 +87,10 @@ namespace Tour.Admin.Functions
             Admin adm = new Admin();
             adm.Show();
         }
+
+        private void ClosingButton(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            Application.Current.Shutdown();
+        }
     }
 }
