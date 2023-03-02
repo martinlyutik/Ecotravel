@@ -193,10 +193,5 @@ namespace Tour.Main
                 MessageBox.Show("Во время выполнения вашего запроса произошла ошибка! Повторите еще раз!");
             }            
         }
-
-        private void ClosingButton(object sender, System.ComponentModel.CancelEventArgs e)
-        {
-            Application.Current.Shutdown();
-        }
     }
 }

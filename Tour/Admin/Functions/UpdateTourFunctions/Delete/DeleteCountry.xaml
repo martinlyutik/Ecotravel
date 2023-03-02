@@ -6,7 +6,6 @@
         xmlns:local="clr-namespace:Tour.Admin.Functions.UpdateTourFunctions.Delete"
         mc:Ignorable="d"
         WindowStartupLocation="CenterScreen"
-        Closing="ClosingButton"
         Title="Удалить страну" Height="200" Width="400">
     <Grid Background="#FFF5F5F7">
         <Button Content="Удалить" HorizontalAlignment="Left" Margin="216,0,0,0" VerticalAlignment="Center" Height="30" Background="#FF08D27B" Foreground="#FFF5F5F7" FontWeight="Medium" BorderBrush="#FFF5F5F7" Width="120" Click="DeleteCountry_Click"/>

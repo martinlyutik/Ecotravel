@@ -6,7 +6,6 @@
         xmlns:local="clr-namespace:Tour.Admin.Functions.UpdateTourFunctions.Insert"
         mc:Ignorable="d"
         WindowStartupLocation="CenterScreen"
-        Closing="ClosingButton"
         Title="Добавить страну" Height="200" Width="400">
     <Grid Background="#FFF5F5F7">
         <TextBox x:Name="Country" HorizontalAlignment="Left" Margin="139,23,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="149" Height="30"/>

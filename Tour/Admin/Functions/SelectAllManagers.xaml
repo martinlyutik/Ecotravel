@@ -6,7 +6,6 @@
         xmlns:local="clr-namespace:Tour.Admin.Functions"
         mc:Ignorable="d"
         WindowStartupLocation="CenterScreen"
-        Closing="ClosingButton"
         Title="Работа с менеджерами" Height="460" Width="814">
     <Grid Background="#FFF5F5F7">
         <ListView x:Name="OutputDb" Margin="287,139,60,72" ToolTip="База данных" BorderBrush="{x:Null}" Foreground="#FF2C2C2E">

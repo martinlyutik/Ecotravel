@@ -53,10 +53,5 @@ namespace Tour.Admin.Functions
             DeleteMng mng = new DeleteMng();
             mng.Show();
         }
-
-        private void ClosingButton(object sender, System.ComponentModel.CancelEventArgs e)
-        {
-            Application.Current.Shutdown();
-        }
     }
 }

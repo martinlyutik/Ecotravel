@@ -58,11 +58,18 @@ namespace Tour.Admin.Functions
                 Match MPs = R.Match(Password.Password);
                 Match ML = R.Match(Login.Text);
 
+                if (Email.Text == "" || Fio.Text == "" || Number.Text == "" 
+                    || Login.Text == "" || Password.Password == "")
+                {
+                    MessageBox.Show("Поля не могут быть пустыми!");
+                    return;
+                }
+
                 for (int i = 0; i < Fio.Text.Length; i++)
                 {
                     if (MS.Success)
                     {
-                        MessageBox.Show("Поле Ф.И.О. не может быть пустым!");
+                        MessageBox.Show("Поле Ф.И.О. не может содержать пробелы!");
                         return;
                     }
                 }
@@ -71,7 +78,7 @@ namespace Tour.Admin.Functions
                 {
                     if (ME.Success || !MEe.Success)
                     {
-                        MessageBox.Show("Поле Email не может быть пустым и должно содержать @!");
+                        MessageBox.Show("Поле Email не может содержать пробелы и должно содержать @!");
                         return;
                     }
                 }
@@ -80,7 +87,7 @@ namespace Tour.Admin.Functions
                 {
                     if (MNu.Success)
                     {
-                        MessageBox.Show("Поле Телефон не может быть пустым!");
+                        MessageBox.Show("Поле Телефон не может содержать пробелы!");
                         return;
                     }
                 }
@@ -89,7 +96,7 @@ namespace Tour.Admin.Functions
                 {
                     if (MPs.Success)
                     {
-                        MessageBox.Show("Поле Пароль не может быть пустым!");
+                        MessageBox.Show("Поле Пароль не может содержать пробелы!");
                         return;
                     }
                 }
@@ -98,7 +105,7 @@ namespace Tour.Admin.Functions
                 {
                     if (ML.Success)
                     {
-                        MessageBox.Show("Поле Логин не может быть пустым!");
+                        MessageBox.Show("Поле Логин не может содержать пробелы!");
                         return;
                     }
                 }
@@ -128,11 +135,6 @@ namespace Tour.Admin.Functions
             {
                 MessageBox.Show("Данные введены неверно! Попробуйте еще раз.");
             }
-        }
-
-        private void ClosingButton(object sender, System.ComponentModel.CancelEventArgs e)
-        {
-            Application.Current.Shutdown();
         }
     }
 }

@@ -6,7 +6,6 @@
         xmlns:local="clr-namespace:Tour.Admin.Functions.UpdateTourFunctions.Insert"
         mc:Ignorable="d"
         WindowStartupLocation="CenterScreen"
-        Closing="ClosingButton"
         Title="Добавить город" Height="200" Width="400">
     <Grid Background="#FFF5F5F7">
         <ComboBox x:Name="Country" HorizontalAlignment="Left" Margin="160,67,0,0" VerticalAlignment="Top" Width="120" Height="30"/>

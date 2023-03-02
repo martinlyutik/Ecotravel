@@ -6,7 +6,6 @@
         xmlns:local="clr-namespace:Tour.Admin.Functions"
         mc:Ignorable="d"
         WindowStartupLocation="CenterScreen"
-        Closing="ClosingButton"
         Title="Создание пользователя" Height="460" Width="814">
     <Grid Background="#FFF5F5F7">
         <Rectangle HorizontalAlignment="Center" Height="49" VerticalAlignment="Top" Width="814">
@@ -68,8 +67,6 @@
         <Label Content="Телефон" HorizontalAlignment="Left" Margin="525,214,0,0" VerticalAlignment="Top" Height="25" Width="60"/>
         <Label Content="Пароль" HorizontalAlignment="Left" Margin="525,244,0,0" VerticalAlignment="Top" Height="24" Width="55"/>
         <Button Content="Создать" HorizontalAlignment="Center" Margin="0,334,0,0" VerticalAlignment="Top" Width="120" Background="#FF08D27B" Foreground="#FFF5F5F7" FontWeight="Medium" BorderBrush="#FFF5F5F7" Click="CreateButton_Click" Height="25"/>
-        <Label x:Name="Who" Content="Создать нового пользователя" HorizontalAlignment="Left" Margin="67,74,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="22" Foreground="#FF2D2D2F"/>
-
-
+        <Label Content="Создать нового пользователя" HorizontalAlignment="Left" Margin="67,74,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="22" Foreground="#FF2D2D2F"/>
     </Grid>
 </Window>

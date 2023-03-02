@@ -6,7 +6,6 @@
         xmlns:local="clr-namespace:Tour.User"
         mc:Ignorable="d"
         WindowStartupLocation="CenterScreen"
-        Closing="ClosingButton"
         Title="Мои заявки" Height="300" Width="600">
     <Grid Background="#FFF5F5F7">
         <Rectangle HorizontalAlignment="Center" Height="49" VerticalAlignment="Top" Width="600">

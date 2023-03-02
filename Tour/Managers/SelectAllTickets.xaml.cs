@@ -93,10 +93,5 @@ namespace Tour.Managers
             Functions.UpdateTicketStatus st = new Functions.UpdateTicketStatus();
             st.Show();
         }
-
-        private void ClosingButton(object sender, System.ComponentModel.CancelEventArgs e)
-        {
-            Application.Current.Shutdown();
-        }
     }
 }

@@ -19,40 +19,12 @@ namespace Tour.User
             Otch.Text = user.Otch;
             Email.Text = user.Email;
             Visa.Text = user.Visa;
-            Number.Text = user.Number;
             Passport.Text = user.Passport;
         }
 
         private void BackButton_Click(object sender, RoutedEventArgs e)
         {
             this.Hide();
-        }
-
-        public Boolean CheckLogin()
-        {
-            DB db = new DB();
-
-            DataTable table = new DataTable();
-
-            SqlDataAdapter adapter = new SqlDataAdapter();
-
-            SqlCommand command = new SqlCommand("SELECT * FROM Users" +
-                " WHERE number = '" + Number.Text + "'", db.GetConnection());
-
-            adapter.SelectCommand = command;
-            adapter.Fill(table);
-
-            db.OpenConnection();
-
-            if (table.Rows.Count > 0)
-            {
-                MessageBox.Show("Данный логин уже занят!");
-                return true;
-            }
-            else
-            {
-                return false;
-            }
         }
 
         private void UpdtButton_Click(object sender, RoutedEventArgs e)
@@ -68,13 +40,20 @@ namespace Tour.User
                 Match MP = R.Match(Passport.Text);
                 Match MV = R.Match(Visa.Text);
                 Match ME = R.Match(Email.Text);
-                Match MNu = R.Match(Number.Text);
+
+                if (Email.Text == "" || Surname.Text == "" 
+                    || Name.Text == "" || Otch.Text == "" 
+                    || Passport.Text == "" || Visa.Text == "")
+                {
+                    MessageBox.Show("Поля не могут быть пустыми!");
+                    return;
+                }
 
                 for (int i = 0; i < Surname.Text.Length; i++)
                 {
                     if (MS.Success)
                     {
-                        MessageBox.Show("Поле Фамилия не может быть пустым!");
+                        MessageBox.Show("Поле Фамилия не может содержать пробелы!");
                         return;
                     }
                 }
@@ -83,7 +62,7 @@ namespace Tour.User
                 {
                     if (MN.Success)
                     {
-                        MessageBox.Show("Поле Имя не может быть пустым!");
+                        MessageBox.Show("Поле Имя не может содержать пробелы!");
                         return;
                     }
                 }
@@ -92,7 +71,7 @@ namespace Tour.User
                 {
                     if (MO.Success)
                     {
-                        MessageBox.Show("Поле Отчество не может быть пустым!");
+                        MessageBox.Show("Поле Отчество не может содержать пробелы!");
                         return;
                     }
                 }
@@ -101,7 +80,7 @@ namespace Tour.User
                 {
                     if (MP.Success)
                     {
-                        MessageBox.Show("Поле Паспортные данные не может быть пустым!");
+                        MessageBox.Show("Поле Паспортные данные не может содержать пробелы!");
                         return;
                     }
                 }
@@ -110,7 +89,7 @@ namespace Tour.User
                 {
                     if (MV.Success)
                     {
-                        MessageBox.Show("Поле Виза не может быть пустым!");
+                        MessageBox.Show("Поле Виза не может содержать пробелы!");
                         return;
                     }
                 }
@@ -119,21 +98,10 @@ namespace Tour.User
                 {
                     if (ME.Success || !MEe.Success)
                     {
-                        MessageBox.Show("Поле Email не может быть пустым и должно содержать @!");
+                        MessageBox.Show("Поле Email не может содержать пробелы и должно содержать @!");
                         return;
                     }
                 }
-
-                for (int i = 0; i < Number.Text.Length; i++)
-                {
-                    if (MNu.Success)
-                    {
-                        MessageBox.Show("Поле Телефон не может быть пустым!");
-                        return;
-                    }
-                }
-
-                if (CheckLogin()) return;
 
                 DB db = new DB();
 
@@ -143,19 +111,18 @@ namespace Tour.User
                     + Otch.Text + "', passport = '"
                     + Passport.Text + "', visa = '"
                     + Visa.Text + "', email = '"
-                    + Email.Text + "', number = '"
-                    + Number.Text + "' WHERE id = " + _id + "", db.GetConnection());
+                    + Email.Text + "' WHERE id = " + _id + "", db.GetConnection());
 
                 db.OpenConnection();
 
                 if (command.ExecuteNonQuery() == 1)
                 {
-                    MessageBox.Show("Данные сохранены!");
+                    MessageBox.Show("Данные изменены!");
                     this.Hide();
                 }
                 else
                 {
-                    MessageBox.Show("Данные не были сохранены!");
+                    MessageBox.Show("Данные не были изменены!");
                 }
 
                 db.CloseConnection();
@@ -164,11 +131,6 @@ namespace Tour.User
             {
                 MessageBox.Show("Ошибка!");
             }
-        }
-
-        private void ClosingButton(object sender, System.ComponentModel.CancelEventArgs e)
-        {
-            Application.Current.Shutdown();
         }
     }
 }

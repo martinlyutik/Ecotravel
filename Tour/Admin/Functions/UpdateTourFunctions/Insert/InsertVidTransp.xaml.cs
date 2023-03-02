@@ -77,10 +77,5 @@ namespace Tour.Admin.Functions.UpdateTourFunctions.Insert
                 MessageBox.Show("Ошибка!");
             }
         }
-
-        private void ClosingButton(object sender, System.ComponentModel.CancelEventArgs e)
-        {
-            Application.Current.Shutdown();
-        }
     }
 }
