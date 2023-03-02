@@ -1,4 +1,4 @@
-# Ecotravel 0.7.1
+# Ecotravel 0.7.2
 
 Десктопное приложение "Ecotravel" предназанчено для подбора туристических путевок.
 Оно содержит в себе:
@@ -54,7 +54,7 @@
 
 1.2 Редактирование личных данных:
 
-![изображение](https://user-images.githubusercontent.com/99510963/221677256-8d367d0c-db66-4c54-888a-c5eb0bffff98.png)
+![изображение](https://user-images.githubusercontent.com/99510963/222500236-a0bafd7f-7c4c-4583-8f79-b82fca7b4bd5.png)
 
 1.3 Каталог туров:
 
@@ -134,7 +134,7 @@
 
 3.6.2 Удалить страну:
 
-![изображение](https://user-images.githubusercontent.com/99510963/221680944-fbf6fde3-ba5c-4a4d-a5e4-87cd4da57614.png)
+![изображение](https://user-images.githubusercontent.com/99510963/222500984-0887a217-46ab-45c8-ba9b-fec305006956.png)
 
 3.6.3 Добавить город:
 
@@ -142,7 +142,7 @@
 
 3.6.4 Удалить город:
 
-![изображение](https://user-images.githubusercontent.com/99510963/221681067-02986f74-697a-413a-825a-51759749e231.png)
+![изображение](https://user-images.githubusercontent.com/99510963/222501041-069b67cc-21f8-4e2a-adbf-7deaf9a301b5.png)
 
 3.6.5 Добавить тип отдыха:
 
@@ -150,7 +150,7 @@
 
 3.6.6 Удалить тип отдыха:
 
-![изображение](https://user-images.githubusercontent.com/99510963/221681184-3483c74d-27ff-4918-a416-653af9b10b1c.png)
+![изображение](https://user-images.githubusercontent.com/99510963/222501082-13ff3233-3662-4017-826a-dd8e982c9e2a.png)
 
 3.6.7 Добавить вид транспорта:
 
@@ -158,7 +158,7 @@
 
 3.6.8 Удалить тип транспорта:
 
-![изображение](https://user-images.githubusercontent.com/99510963/221681303-25e66128-b8bc-4486-a6ab-2df4088ec3ac.png)
+![изображение](https://user-images.githubusercontent.com/99510963/222501129-a375b3e6-2d87-416b-abeb-84b89a023728.png)
 
 3.6.9 Добавить вид размещения:
 
@@ -166,4 +166,4 @@
 
 3.6.10 Удалить вид размещения:
 
-![изображение](https://user-images.githubusercontent.com/99510963/221681520-ec513b38-5b94-4101-bfd3-caa5c8026dda.png)
+![изображение](https://user-images.githubusercontent.com/99510963/222501168-c8cf0136-b647-47fa-9864-355016a17bf7.png)
