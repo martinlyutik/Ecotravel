@@ -1,9 +1,10 @@
 <p align="center">
 <img width="100px" src="https://res.cloudinary.com/dz1ed1gfv/image/upload/v1678212522/Ecotravel_zbssff.png" align="center" alt="Ecotravel"/>
-<h1 align="center">Ecotravel 0.8.1</h1>
+<h1 align="center">Ecotravel</h1>
 </p>
 
 
+*Версия: 0.8.1*
 
 Десктопное приложение "Ecotravel" предназанчено для подбора туристических путевок.
 
