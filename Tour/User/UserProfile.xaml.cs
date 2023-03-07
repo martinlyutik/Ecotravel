@@ -12,8 +12,6 @@ namespace Tour.User
 
             InitializeComponent();
 
-            All.Text = user.Surname + " " + user.Namme + " " + user.Otch;
-
             Surn.Text = user.Surname;
             Name.Text = user.Namme;
             Otch.Text = user.Otch;
