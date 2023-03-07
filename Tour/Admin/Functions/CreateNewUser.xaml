@@ -34,39 +34,39 @@
                 </TransformGroup>
             </Label.RenderTransform>
         </Label>
-        <Rectangle RadiusX="10" RadiusY="10" HorizontalAlignment="Left" Height="120" Margin="57,169,0,0" VerticalAlignment="Top" Width="222" Fill="White" ScrollViewer.VerticalScrollBarVisibility="Disabled">
+        <Rectangle RadiusX="10" RadiusY="10" HorizontalAlignment="Left" Height="125" Margin="57,161,0,0" VerticalAlignment="Top" Width="222" Fill="White" ScrollViewer.VerticalScrollBarVisibility="Disabled">
             <Rectangle.Effect>
                 <DropShadowEffect BlurRadius="60" Color="#ebebf5" ShadowDepth="0"/>
             </Rectangle.Effect>
         </Rectangle>
-        <Rectangle RadiusX="10" RadiusY="10" HorizontalAlignment="Left" Height="120" Margin="522,169,0,0" VerticalAlignment="Top" Width="221" Fill="White" ScrollViewer.VerticalScrollBarVisibility="Disabled">
+        <Rectangle RadiusX="10" RadiusY="10" HorizontalAlignment="Left" Height="125" Margin="290,161,0,0" VerticalAlignment="Top" Width="221" Fill="White" ScrollViewer.VerticalScrollBarVisibility="Disabled">
             <Rectangle.Effect>
                 <DropShadowEffect BlurRadius="60" Color="#ebebf5" ShadowDepth="0"/>
             </Rectangle.Effect>
         </Rectangle>
-        <Rectangle RadiusX="10" RadiusY="10" HorizontalAlignment="Left" Height="120" Margin="289,169,0,0" VerticalAlignment="Top" Width="222" Fill="White" ScrollViewer.VerticalScrollBarVisibility="Disabled">
+        <Rectangle RadiusX="10" RadiusY="10" HorizontalAlignment="Left" Height="125" Margin="523,161,0,0" VerticalAlignment="Top" Width="222" Fill="White" ScrollViewer.VerticalScrollBarVisibility="Disabled">
             <Rectangle.Effect>
                 <DropShadowEffect BlurRadius="60" Color="#ebebf5" ShadowDepth="0"/>
             </Rectangle.Effect>
         </Rectangle>
         <Button Content="Назад" HorizontalAlignment="Left" Margin="730,12,0,0" VerticalAlignment="Top" BorderBrush="#FF3DA35D" Background="White" Click="BackButton_Click" FontWeight="Medium" FontStretch="SemiCondensed" Foreground="#FF3DA35D" Height="27" Width="55"/>
-        <TextBox MaxLength="50" x:Name="Surname" HorizontalAlignment="Left" Margin="142,185,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox MaxLength="50" x:Name="Otch" HorizontalAlignment="Left" Margin="142,246,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox MaxLength="50" x:Name="Passport" HorizontalAlignment="Left" Margin="360,185,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox MaxLength="50" x:Name="Name" HorizontalAlignment="Left" Margin="142,216,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox MaxLength="50" x:Name="Visa" HorizontalAlignment="Left" Margin="360,216,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox MaxLength="50" x:Name="Email" HorizontalAlignment="Left" Margin="595,185,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox MaxLength="50" x:Name="Number" HorizontalAlignment="Left" Margin="595,216,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <PasswordBox MaxLength="50" x:Name="Pass" HorizontalAlignment="Left" Margin="595,246,0,0" VerticalAlignment="Top" Width="120"/>
-        <Label Content="Фамилия" HorizontalAlignment="Left" Margin="67,185,0,0" VerticalAlignment="Top" Height="25" Width="60"/>
-        <Label Content="Имя" HorizontalAlignment="Left" Margin="67,214,0,0" VerticalAlignment="Top" Height="25" Width="35"/>
-        <Label Content="Отчество" HorizontalAlignment="Left" Margin="67,243,0,0" VerticalAlignment="Top" Height="26" Width="65"/>
-        <Label Content="Паспорт" HorizontalAlignment="Left" Margin="290,185,0,0" VerticalAlignment="Top" Height="25" Width="60"/>
-        <Label Content="Виза" HorizontalAlignment="Left" Margin="290,214,0,0" VerticalAlignment="Top" Height="26" Width="35"/>
-        <Label Content="Email" HorizontalAlignment="Left" Margin="525,185,0,0" VerticalAlignment="Top" Height="24" Width="40" RenderTransformOrigin="0.5,0.502"/>
-        <Label Content="Телефон" HorizontalAlignment="Left" Margin="525,214,0,0" VerticalAlignment="Top" Height="25" Width="60"/>
-        <Label Content="Пароль" HorizontalAlignment="Left" Margin="525,244,0,0" VerticalAlignment="Top" Height="24" Width="55"/>
+        <TextBox MaxLength="50" x:Name="Surname" HorizontalAlignment="Left" Margin="142,172,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="30"/>
+        <TextBox MaxLength="50" x:Name="Otch" HorizontalAlignment="Left" Margin="142,246,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="30"/>
+        <TextBox MaxLength="50" x:Name="Passport" HorizontalAlignment="Left" Margin="375,172,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="30"/>
+        <TextBox MaxLength="50" x:Name="Name" HorizontalAlignment="Left" Margin="142,209,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="30"/>
+        <TextBox MaxLength="50" x:Name="Visa" HorizontalAlignment="Left" Margin="375,209,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="30"/>
+        <TextBox MaxLength="50" x:Name="Email" HorizontalAlignment="Left" Margin="610,172,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="30"/>
+        <TextBox MaxLength="50" x:Name="Number" HorizontalAlignment="Left" Margin="610,209,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="30"/>
+        <PasswordBox MaxLength="50" x:Name="Pass" HorizontalAlignment="Left" Margin="610,246,0,0" VerticalAlignment="Top" Width="120" Height="30"/>
+        <Label Content="Фамилия" HorizontalAlignment="Left" Margin="67,175,0,0" VerticalAlignment="Top" Height="25" Width="60"/>
+        <Label Content="Имя" HorizontalAlignment="Left" Margin="67,211,0,0" VerticalAlignment="Top" Height="25" Width="35"/>
+        <Label Content="Отчество" HorizontalAlignment="Left" Margin="67,249,0,0" VerticalAlignment="Top" Height="24" Width="65"/>
+        <Label Content="Паспорт" HorizontalAlignment="Left" Margin="300,175,0,0" VerticalAlignment="Top" Height="24" Width="60"/>
+        <Label Content="Виза" HorizontalAlignment="Left" Margin="300,211,0,0" VerticalAlignment="Top" Height="26" Width="35"/>
+        <Label Content="Email" HorizontalAlignment="Left" Margin="535,175,0,0" VerticalAlignment="Top" Height="24" Width="40" RenderTransformOrigin="0.5,0.502"/>
+        <Label Content="Телефон" HorizontalAlignment="Left" Margin="535,211,0,0" VerticalAlignment="Top" Height="26" Width="60"/>
+        <Label Content="Пароль" HorizontalAlignment="Left" Margin="535,249,0,0" VerticalAlignment="Top" Height="24" Width="55"/>
         <Button Content="Создать" HorizontalAlignment="Center" Margin="0,334,0,0" VerticalAlignment="Top" Width="120" Background="#FF08D27B" Foreground="#FFF5F5F7" FontWeight="Medium" BorderBrush="#FFF5F5F7" Click="CreateButton_Click" Height="25"/>
-        <Label Content="Создать нового пользователя" HorizontalAlignment="Left" Margin="67,74,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="22" Foreground="#FF2D2D2F"/>
+        <Label Content="Создать нового пользователя" HorizontalAlignment="Center" Margin="0,84,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="22" Foreground="#FF2D2D2F"/>
     </Grid>
 </Window>

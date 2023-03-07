@@ -54,7 +54,8 @@
             </Label.RenderTransform>
         </Label>
         <Button Content="Назад" HorizontalAlignment="Left" Margin="730,12,0,0" VerticalAlignment="Top" BorderBrush="#FF3DA35D" Background="White" Click="BackButton_Click" FontWeight="Medium" FontStretch="SemiCondensed" Foreground="#FF3DA35D" Height="27" Width="55"/>
-        <Button Content="Удалить менеджера" HorizontalAlignment="Left" Margin="60,179,0,0" VerticalAlignment="Top" Height="30" Background="#FF08D27B" Foreground="#FFF5F5F7" FontWeight="Medium" Width="183" Click="DeleteMng_Click"/>
+        <Button Content="Удалить менеджера" HorizontalAlignment="Left" Margin="60,219,0,0" VerticalAlignment="Top" Height="30" Background="#FF08D27B" Foreground="#FFF5F5F7" FontWeight="Medium" Width="183" Click="DeleteMng_Click"/>
         <Label x:Name="Who" Content="Работа с менеджерами" HorizontalAlignment="Left" Margin="60,75,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="22" Foreground="#FF2D2D2F"/>
+        <Button Content="Создать менеджера" HorizontalAlignment="Left" Margin="60,179,0,0" VerticalAlignment="Top" Height="30" Width="183" Click="CreateManager_Click" Background="#FF08D27B" Foreground="#FFF5F5F7" FontWeight="Medium"/>
     </Grid>
 </Window>

@@ -95,7 +95,7 @@ namespace Tour.Authentification
                         }
                         else
                         {
-                            MessageBox.Show("Такого пользователя не существует!");
+                            MessageBox.Show("Пользователь не найден!");
                         }
                     }
                     else
@@ -119,7 +119,7 @@ namespace Tour.Authentification
         private void SignUpButton_Click(object sender, RoutedEventArgs e)
         {
             this.Hide();
-            Authentification.SignUp up = new Authentification.SignUp();
+            SignUp up = new SignUp();
             up.Show();
         }
 

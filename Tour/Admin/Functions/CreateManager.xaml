@@ -34,29 +34,29 @@
                 </TransformGroup>
             </Label.RenderTransform>
         </Label>
-        <Rectangle RadiusX="10" RadiusY="10" HorizontalAlignment="Left" Height="120" Margin="155,169,0,0" VerticalAlignment="Top" Width="222" Fill="White" ScrollViewer.VerticalScrollBarVisibility="Disabled">
+        <Rectangle RadiusX="10" RadiusY="10" HorizontalAlignment="Left" Height="139" Margin="165,155,0,0" VerticalAlignment="Top" Width="222" Fill="White" ScrollViewer.VerticalScrollBarVisibility="Disabled">
             <Rectangle.Effect>
                 <DropShadowEffect BlurRadius="60" Color="#ebebf5" ShadowDepth="0"/>
             </Rectangle.Effect>
         </Rectangle>
         <Button Content="Назад" HorizontalAlignment="Left" Margin="730,12,0,0" VerticalAlignment="Top" BorderBrush="#FF3DA35D" Background="White" Click="BackButton_Click" FontWeight="Medium" FontStretch="SemiCondensed" Foreground="#FF3DA35D" Height="27" Width="55"/>
-        <TextBox x:Name="Fio" HorizontalAlignment="Left" Margin="240,182,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="22"/>
-        <Label Content="Ф.И.О." HorizontalAlignment="Left" Margin="165,180,0,0" VerticalAlignment="Top" Height="26" Width="45"/>
-        <TextBox x:Name="Number" HorizontalAlignment="Left" Margin="240,247,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="22"/>
-        <Label Content="Телефон" HorizontalAlignment="Left" Margin="165,244,0,0" VerticalAlignment="Top" Height="25" Width="60"/>
-        <Rectangle RadiusX="10" RadiusY="10" HorizontalAlignment="Left" Height="120" Margin="422,169,0,0" VerticalAlignment="Top" Width="222" Fill="White" ScrollViewer.VerticalScrollBarVisibility="Disabled">
+        <TextBox x:Name="Fio" HorizontalAlignment="Left" Margin="250,168,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="30"/>
+        <Label Content="Ф.И.О." HorizontalAlignment="Left" Margin="175,170,0,0" VerticalAlignment="Top" Height="26" Width="45"/>
+        <TextBox x:Name="Number" HorizontalAlignment="Left" Margin="250,250,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="30"/>
+        <Label Content="Телефон" HorizontalAlignment="Left" Margin="175,252,0,0" VerticalAlignment="Top" Height="26" Width="60"/>
+        <Rectangle RadiusX="10" RadiusY="10" HorizontalAlignment="Left" Height="139" Margin="433,155,0,0" VerticalAlignment="Top" Width="222" Fill="White" ScrollViewer.VerticalScrollBarVisibility="Disabled">
             <Rectangle.Effect>
                 <DropShadowEffect BlurRadius="60" Color="#ebebf5" ShadowDepth="0"/>
             </Rectangle.Effect>
         </Rectangle>
-        <TextBox x:Name="Email" HorizontalAlignment="Left" Margin="240,214,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="22"/>
-        <Label Content="Email" HorizontalAlignment="Left" Margin="165,210,0,0" VerticalAlignment="Top" Height="24" Width="40"/>
-        <TextBox x:Name="Login" HorizontalAlignment="Left" Margin="502,182,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="22"/>
-        <Label Content="Логин" HorizontalAlignment="Left" Margin="435,180,0,0" VerticalAlignment="Top" Height="26" Width="45"/>
-        <PasswordBox x:Name="Password" HorizontalAlignment="Left" Margin="502,214,0,0" VerticalAlignment="Top" Width="120" Height="22"/>
-        <Label Content="Пароль" HorizontalAlignment="Left" Margin="435,209,0,0" VerticalAlignment="Top" Height="25" Width="55"/>
+        <TextBox x:Name="Email" HorizontalAlignment="Left" Margin="250,209,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="30"/>
+        <Label Content="Email" HorizontalAlignment="Left" Margin="175,212,0,0" VerticalAlignment="Top" Height="24" Width="40"/>
+        <TextBox x:Name="Login" HorizontalAlignment="Left" Margin="512,168,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="30"/>
+        <Label Content="Логин" HorizontalAlignment="Left" Margin="445,170,0,0" VerticalAlignment="Top" Height="25" Width="45"/>
+        <PasswordBox x:Name="Password" HorizontalAlignment="Left" Margin="512,209,0,0" VerticalAlignment="Top" Width="120" Height="30"/>
+        <Label Content="Пароль" HorizontalAlignment="Left" Margin="445,210,0,0" VerticalAlignment="Top" Height="28" Width="55"/>
         <Button Content="Создать" HorizontalAlignment="Center" Margin="0,334,0,0" VerticalAlignment="Top" Width="160" Background="#FF08D27B" Foreground="#FFF5F5F7" FontWeight="Medium" Click="CreateManagerButton_Click" Height="30"/>
-        <Label x:Name="Who" Content="Создать нового менеджера" HorizontalAlignment="Left" Margin="60,75,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="22" Foreground="#FF2D2D2F"/>
+        <Label x:Name="Who" Content="Создать нового менеджера" HorizontalAlignment="Center" Margin="0,79,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="22" Foreground="#FF2D2D2F"/>
 
     </Grid>
 </Window>

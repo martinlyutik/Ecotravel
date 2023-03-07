@@ -59,5 +59,6 @@
                 </TransformGroup>
             </Label.RenderTransform>
         </Label>
+        <TextBlock x:Name="All" HorizontalAlignment="Left" Margin="308,82,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="25" Width="350"/>
     </Grid>
 </Window>

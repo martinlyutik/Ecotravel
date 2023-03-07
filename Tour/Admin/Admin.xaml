@@ -26,7 +26,7 @@
             </Rectangle.Fill>
         </Rectangle>
         <Button Content="Назад" HorizontalAlignment="Left" Margin="730,12,0,0" VerticalAlignment="Top" BorderBrush="#FF3DA35D" Background="White" Click="BackButton_Click" FontWeight="Medium" FontStretch="SemiCondensed" Foreground="#FF3DA35D" Height="27" Width="55"/>
-        <ListView x:Name="OutputDb" Margin="281,139,60,50" ToolTip="База данных" BorderBrush="{x:Null}" Foreground="#FF2C2C2E">
+        <ListView x:Name="OutputDb" Margin="281,139,60,80" ToolTip="База данных" BorderBrush="{x:Null}" Foreground="#FF2C2C2E">
             <ListView.View>
                 <GridView>
                     <GridViewColumn DisplayMemberBinding="{Binding Path=id}"
@@ -52,10 +52,9 @@
         </ListView>
         <Button Content="Вывести пользователей" HorizontalAlignment="Left" Margin="60,139,0,0" VerticalAlignment="Top" Height="30" Width="183" Click="SelectUser_Click" Background="#FF08D27B" Foreground="#FFF5F5F7" FontWeight="Medium"/>
         <Button Content="Создать пользователя" HorizontalAlignment="Left" Margin="60,179,0,0" VerticalAlignment="Top" Height="30" Width="183" Click="CreateUser_Click" Background="#FF08D27B" Foreground="#FFF5F5F7" FontWeight="Medium"/>
-        <Button Content="Создать менеджера" HorizontalAlignment="Left" Margin="60,299,0,0" VerticalAlignment="Top" Height="30" Width="183" Click="CreateManager_Click" Background="#FF08D27B" Foreground="#FFF5F5F7" FontWeight="Medium"/>
         <Button Content="Работа с менеджерами" HorizontalAlignment="Left" Margin="60,259,0,0" VerticalAlignment="Top" Height="30" Width="183" Click="SelectMng_Click" Background="#FF08D27B" Foreground="#FFF5F5F7" FontWeight="Medium"/>
         <Button Content="Удалить пользователя" HorizontalAlignment="Left" Margin="60,220,0,0" VerticalAlignment="Top" Height="30" Width="183" Click="DeleteUser_Click" Background="#FF08D27B" Foreground="#FFF5F5F7" FontWeight="Medium"/>
-        <Button Content="Редактировать туры" HorizontalAlignment="Left" Margin="60,339,0,0" VerticalAlignment="Top" Height="30" Width="183" Click="UpdtTours_Click" Background="#FF08D27B" Foreground="#FFF5F5F7" FontWeight="Medium"/>
+        <Button Content="Редактировать туры" HorizontalAlignment="Left" Margin="60,299,0,0" VerticalAlignment="Top" Height="30" Width="183" Click="UpdtTours_Click" Background="#FF08D27B" Foreground="#FFF5F5F7" FontWeight="Medium"/>
         <Label Content="Ecotravel" HorizontalAlignment="Left" Margin="25,4,0,0" VerticalAlignment="Top" FontSize="24" FontWeight="Bold" Width="117" RenderTransformOrigin="0.5,0.5" Foreground="White">
             <Label.RenderTransform>
                 <TransformGroup>
